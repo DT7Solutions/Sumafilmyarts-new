@@ -1,0 +1,109 @@
+{% extends 'uifiles/base.html' %}
+{% load static %}
+{% block content %}
+  <!-- hero-start -->
+<!-- Start of Slider section
+	============================================= -->
+	<section id="bi-slider" class="bi-slider-section">	
+		<div class="bi-main-slider-section position-relative">
+			<div class="bi-main-slider-area position-relative"  data-background="{% static ' assets/img/slider/slide1.png' %}">
+				<div class="bi-main-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide bg-dark">
+							<div class="bi-main-slide-item position-relative">
+								<div class="container">
+									<div class="bi-main-slide-text-img-content d-flex align-items-end">
+										<div class="bi-slide-img-area position-relative">
+											<div class="bi-slide-img">
+												<img src="{% static 'assets/img/slider/sumafilmyart-slide1.png' %}" alt="">
+											</div>
+											
+										</div>
+										<div class="bi-slide-text-area headline ul-li-block">
+											<h1>smooth1</h1>
+											<h2 class="b-strock-font">
+											Development</h2>
+											<ul>
+												<li>Digital Marketing</li>
+												<li>Quality Designs</li>
+												<li>Mobile Solutions</li>
+											</ul>
+											<div class="bi-btn-1 bi-btn-area text-uppercase">
+												<a class="bi-btn-main  bi-btn-hover bi-btn-item" href="service.html">  <span></span> Get Services</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<span class="side-shape position-absolute"><img src="{% static 'assets/img/slider/slide_shape_4.png' %}" alt=""></span>
+							</div>
+						</div>
+						<div class="swiper-slide bg-warning">
+							<div class="bi-main-slide-item position-relative">
+								<div class="container">
+									<div class="bi-main-slide-text-img-content d-flex align-items-end">
+										<div class="bi-slide-img-area position-relative">
+											<div class="bi-slide-img">
+												<img src="{% static 'assets/img/slider/sumafilmyart-slide1.png' %}" alt="">
+											</div>
+											
+										</div>
+										<div class="bi-slide-text-area headline ul-li-block">
+											<h1>Smooth2</h1>
+											<h2 class="b-strock-font">
+											Development</h2>
+											<ul>
+												<li>Digital Marketing</li>
+												<li>Quality Designs</li>
+												<li>Mobile Solutions</li>
+											</ul>
+											<div class="bi-btn-1 bi-btn-area text-uppercase">
+												<a class="bi-btn-main  bi-btn-hover bi-btn-item" href="service.html">  <span></span> Get Services</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<span class="side-shape position-absolute"><img src="{% static 'assets/img/slider/slide_shape_4.png' %}" alt=""></span>
+							</div>
+						</div>
+						<div class="swiper-slide bg-danger">
+							<div class="bi-main-slide-item position-relative">
+								<div class="container">
+									<div class="bi-main-slide-text-img-content d-flex align-items-end">
+										<div class="bi-slide-img-area position-relative">
+											<div class="bi-slide-img">
+												<img src="{% static 'assets/img/slider/sumafilmyart-slide1.png' %}" alt="">
+											</div>
+											
+										</div>
+										<div class="bi-slide-text-area headline ul-li-block">
+											<h1>Smooth3</h1>
+											<h2 class="b-strock-font">
+											Development</h2>
+											<ul>
+												<li>Digital Marketing</li>
+												<li>Quality Designs</li>
+												<li>Mobile Solutions</li>
+											</ul>
+											<div class="bi-btn-1 bi-btn-area text-uppercase">
+												<a class="bi-btn-main  bi-btn-hover bi-btn-item" href="service.html">  <span></span> Get Services</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<span class="side-shape position-absolute"><img src="{% static ' assets/img/slider/slide_shape_4.png' %}" alt=""></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bi-carousel-arrow-next-prev  position-absolute">
+					<div class="bi-slider-arrow d-flex justify-content-center align-items-center bi-main-button-prev"><i class="far fa-long-arrow-left"></i></div>
+					<div class="bi-slider-arrow d-flex justify-content-center align-items-center bi-main-button-next"><i class="far fa-long-arrow-right"></i></div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- nd of Slider  section -->
+<!-- hero-end -->
+
+
+{% endblock %}
