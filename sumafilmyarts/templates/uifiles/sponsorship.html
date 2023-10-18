@@ -1,0 +1,104 @@
+{% extends 'uifiles/base.html' %}
+{% load static %}
+{% block content %}
+
+<!--breadcrumb section start-->
+<section id="bi-breadcrumbs" class="bi-breadcrumb-bg-img bi-bredcrumbs-section position-relative" data-background="{% static 'assets/img/bg/Sumafilmyarts-banner-1920x300.png' %}" style="background-image: url(&quot;assets/img/bg/bread-bg.jpg&quot;);">
+    <!-- <div class="background_overlay"></div> -->
+    <div class="container">
+        <div class="bi-breadcrumbs-content headline ul-li text-center">
+            <h2>Sponsorship</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>Sponsorship</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--breadcrumb section end-->
+
+<!--Contact page section start-->
+<section id="bi-job-apply" class="bi-job-apply-section inner-page-padding">
+    <div class="container">
+        <div class="bi-section-title-1 bi-section-heading-title text-center headline pera-content">
+            <h2 class="headline-title" style="perspective: 400px;"><div style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; transform-origin: 425px 40px; transform: translate3d(0px, 0px, 0px); opacity: 1;"> Sponsorships/Ambassadorship Boost your brand image with us!</div></h2>
+        </div>
+        <div class="bi-team-details-contact-info headline pera-content">
+            <div class="bi-team-details-contact-title">
+                <div class="bi-team-details-contact-form">
+                    <form action="#" method="get">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="First Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Last Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="phonenumber">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Name Of Brand/Agency">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Industry">
+                            </div>
+                            <!-- <div>
+                                <label for=""><h5>Kind of collaborations</h5></label>
+                            </div> -->
+                            <div class="question pb-4">
+                                <div class="inputstate"><b>What are you looking for</b></div>
+                                <div class="form-group col-md-8">   
+                                    <select class="form-control" id="inputState" name="inputState">
+                                        <option value="SelectState">-- select -- </option>
+                                        <option value="sponcer">Want to Sponsor </option>
+                                        <option value="BrandAmbassador">Want a Brand Ambassador</option>        
+                                    </select>
+                                  </div>
+                                <div>
+                                    <div class="form-group col-md-8 pt-3">
+                                        <div class="inputDistrict"><b>Kind of sponsorship</b></div>
+                                        <select class="form-control" id="inputDistrict" name="inputDistrict">
+                                            <option value="">-- select -- </option>
+                                        </select>
+                                    </div>
+        
+                                </div>
+                            </div>
+                             
+                              
+                            
+                            <!-- <div class="col-md-6">
+                                <input type="text" name="email" placeholder="Portfolio / Website link..">
+                            </div> -->
+                            <!-- <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Your expected salary">
+                            </div> -->
+                            <div class="col-md-12 ">
+                                <div class="upload-cv headline">
+                                    <h3>Upload CV</h3>
+                                    <input type="file" id="file" name="file" accept=".txt, .pdf, .doc, .docx">
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-12">
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </div> -->
+                            <div class="col-md-12">
+                                <div class="ai-submit-btn d-flex">
+                                    <button>Send messages</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact page section end-->
+
+{% endblock %}

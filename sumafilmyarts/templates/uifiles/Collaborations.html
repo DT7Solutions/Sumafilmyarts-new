@@ -1,0 +1,111 @@
+{% extends 'uifiles/base.html' %}
+{% load static %}
+{% block content %}
+
+<!--breadcrumb section start-->
+<section id="bi-breadcrumbs" class="bi-breadcrumb-bg-img bi-bredcrumbs-section position-relative" data-background="{% static 'assets/img/bg/Sumafilmyarts-banner-1920x300.png' %}" style="background-image: url(&quot;assets/img/bg/bread-bg.jpg&quot;);">
+    <!-- <div class="background_overlay"></div> -->
+    <div class="container">
+        <div class="bi-breadcrumbs-content headline ul-li text-center">
+            <h2>Collaborations</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>Collaborations</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--breadcrumb section end-->
+
+<!--Contact page section start-->
+<section id="bi-job-apply" class="bi-job-apply-section inner-page-padding">
+    <div class="container">
+        <div class="bi-section-title-1 bi-section-heading-title text-center headline pera-content">
+            <h2 class="headline-title" style="perspective: 400px;"><div style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; transform-origin: 425px 40px; transform: translate3d(0px, 0px, 0px); opacity: 1;"> Get in touch with us to combine forces and deliver content. </div></h2>
+        </div>
+        <div class="bi-team-details-contact-info headline pera-content">
+            <div class="bi-team-details-contact-title">
+                <div class="bi-team-details-contact-form">
+                    <form action="#" method="get">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="First Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Last Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="phonenumber">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Name Of Brand/Agency">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Industry">
+                            </div>
+                            <!-- <div>
+                                <label for=""><h5>Kind of collaborations</h5></label>
+                            </div> -->
+                            <div class="question">
+                                <div class=" h5  ch-box"><b>Kind of collaboration?</b></div>
+                                <div>
+                                    <label for="Instagram" class="script ">Instagram
+                                        <input type="checkbox" id="Instagram" name="check" value="Instagram" data-gtm-form-interact-field-id="2">
+                                        <span class="geekmark"></span>
+                                    </label>
+
+                                    <label for="Youtube" class="script">Youtube
+                                        <input type="checkbox" id="Youtube" name="check" value="Youtube" data-gtm-form-interact-field-id="3">
+                                    </label>
+
+                                    <label for="YoutubeReel" class="script"> YoutubeReel
+                                        <input type="checkbox" id="YoutubeReel" name="check" value="YoutubeReel" data-gtm-form-interact-field-id="4">
+                                    </label>
+                                    <label for="FaceBook" class="script"> FaceBook
+                                        <input type="checkbox" id="FaceBook" name="check" value="FaceBook" data-gtm-form-interact-field-id="0">
+                                    </label>
+                                    <label for="Other" class="script"> Other
+                                        <input type="checkbox" id="Other" name="check" value="Other" onchange="yesnoCheck(this);" data-gtm-form-interact-field-id="1">
+                                    </label>
+                                </div>
+
+                                <div class="col-12 mt-4 " id="ifYes1">
+                                    <input type="text" name="ifYes" class="form-control" id="ifYes" placeholder="write detail what are looking for" required="" style="display: block;">
+                                </div>
+                            </div>
+                              
+                            
+                            <!-- <div class="col-md-6">
+                                <input type="text" name="email" placeholder="Portfolio / Website link..">
+                            </div> -->
+                            <!-- <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Your expected salary">
+                            </div> -->
+                            <div class="col-md-12">
+                                <div class="upload-cv headline">
+                                    <h3>Upload CV</h3>
+                                    <input type="file" id="file" name="file" accept=".txt, .pdf, .doc, .docx">
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-12">
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </div> -->
+                            <div class="col-md-12">
+                                <div class="ai-submit-btn d-flex">
+                                    <button>Send messages</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact page section end-->
+
+{% endblock %}

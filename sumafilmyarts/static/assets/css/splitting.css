@@ -64,3 +64,8 @@
   /* Distance from center where 1 is far left/far right, 0 is center */
   --distance-percent: calc((var(--distance) / var(--char-center)));
 }
+@media screen and (max-width: 560px) {
+  .back-red{
+    background-color:red!important;
+  }
+}

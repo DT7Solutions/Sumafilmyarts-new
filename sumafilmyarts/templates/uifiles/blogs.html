@@ -1,0 +1,82 @@
+{% extends 'uifiles/base.html' %}
+{% load static %}
+{% block content %}
+
+<!--breadcrumb section start-->
+<section id="bi-breadcrumbs" class="bi-breadcrumb-bg-img bi-bredcrumbs-section position-relative" data-background="{% static 'assets/img/bg/Sumafilmyarts-banner-1920x300.png' %}" style="background-image: url(&quot;assets/img/bg/bread-bg.jpg&quot;);">
+    <!-- <div class="background_overlay"></div> -->
+    <div class="container">
+        <div class="bi-breadcrumbs-content headline ul-li text-center">
+            <h2>Blogs</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>Blogs</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--breadcrumb section end-->
+  
+
+<!--blogs section start-->
+
+<section id="bi-blog-feed-2" class="bi-blog-feed-section-2 inner-page-padding">
+    <div class="container">
+        <div class="bi-section-title-1 text-center headline pera-content">
+            <h3 class="headline-title" style="perspective: 400px;"><div style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; transform-origin: 425px 40px; transform: translate3d(0px, 0px, 0px); opacity: 1;"> Recent Blogs </div></h3>
+        </div>
+        <div class="bi-blog-feed-content-2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="bi-blog-feed-item-2">
+                            <div class="blog-img position-relative">
+                                <img src="{% static 'assets/img/blog/bfd1.png' %}" alt="">
+                                <!-- <div class="blog-meta text-uppercase position-absolute">
+                                    <i class="fas fa-calendar-alt"></i> October 6, 2023
+                                </div> -->
+                            </div>
+                            <div class="blog-text headline pera-content">
+                                <h3><a href="#">Idea behind Suma Filmy Arts – The Inspiring Journey of Suma Kanakala</a></h3>
+                                <p>Suma Filmy Arts is one of the top production houses in Hyderabad. Our team has over 30 years of combined experience in the Telugu television and film industry.</p>
+                            </div>
+                            <span class="title"><a href="#" style="text-decoration: none; font-size:18px;color:blue;">Read More</a></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="bi-blog-feed-item-2">
+                            <div class="blog-img position-relative">
+                                <img src="{% static 'assets/img/blog/bfd2.png' %}" alt="">
+                                <!-- <div class="blog-meta text-uppercase position-absolute">
+                                    <i class="fas fa-calendar-alt"></i> October 6, 2023
+                                </div> -->
+                            </div>
+                            <div class="blog-text headline pera-content">
+                                <h3><a href="#">Unveiling the Hidden Heroes of Film Production</a></h3>
+                                <p>In the glamorous world of cinema, there is a lot more to a successful film than meets the eye.Behind every captivating scene, there are numerous individuals</p>
+                            </div>
+                            <span class="title"><a href="#" style="text-decoration: none; font-size:18px;color:blue;">Read More</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="bi-pagination text-center ul-li">
+                <ul>
+                    <li><a href="#"><i class="fal fa-chevron-double-left"></i></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><i class="fal fa-chevron-double-right"></i></a></li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<!--blogs section end-->
+
+
+
+
+{% endblock %}

@@ -803,7 +803,7 @@ select:visited {
 }
 
 .inner-page-padding {
-  padding: 120px 0px;
+  padding: 60px 0px;
 }
 
 .bi-pagination li a {
@@ -1897,7 +1897,7 @@ select:visited {
 /*----------------------------------------------------*/
 .bi-slider-section {
   overflow: hidden;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 .bi-slider-content {
@@ -13017,7 +13017,7 @@ CSS INDEX
   width: 100%;
   -webkit-animation: slideInDown 0.5s;
           animation: slideInDown 0.5s;
-  background: var(--linear, linear-gradient(90deg, #E02626 0%, #F0831F 100%));
+  background: var(--linear, linear-gradient(90deg, #fff 0%, #F0831F 100%));
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -13362,9 +13362,10 @@ CSS INDEX
 }
 .sidemenu-profile .img img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+     padding-left: 10px;
 }
 .sidemenu-profile .name {
   font-size: 28px;
@@ -16316,7 +16317,7 @@ CSS INDEX
 }
 
 .hpt-about-1-area {
-  padding-bottom: 200px;
+  padding-bottom: 30px;
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -19001,14 +19002,14 @@ CSS INDEX
 }
 
 .hpt-footer-widget-content {
-  padding: 200px 0px 50px;
+  padding: 40px 0px 50px;
 }
 
 .hpt-footer-widget {
   margin-bottom: 40px;
 }
 .hpt-footer-widget .widget-title {
-  color: #fff;
+  color: #f76508;
   font-size: 26px;
   font-weight: 600;
   position: relative;
@@ -19019,11 +19020,11 @@ CSS INDEX
 .hpt-footer-widget .widget-title::before {
   left: 0;
   bottom: 0;
-  height: 1px;
+  height: 2px;
   content: "";
-  width: 100%;
+  width: 40%;
   position: absolute;
-  background-color: #fff;
+  background-color: #f76508;
 }
 
 .hpt-footer-widget .about-widget {
@@ -19050,7 +19051,7 @@ CSS INDEX
   margin-bottom: 8px;
 }
 .hpt-footer-widget .menu-widget li a {
-  color: #e3e3e3;
+  /* color: #f76508; */
   font-size: 15px;
   position: relative;
 }
@@ -19124,7 +19125,7 @@ CSS INDEX
   padding: 15px 0;
   font-size: 15px;
   font-weight: 500;
-  color: #fff;
+  /* color: #fff; */
   font-family: "Recoleta Alt";
   margin-bottom: 0;
 }
@@ -19147,16 +19148,16 @@ CSS INDEX
 }
 
 .bi-breadcrumbs-content {
-  padding: 300px 0px 230px;
+  padding: 50px 0px 15px;  /* 300px 0px 230px */
 }
 .bi-breadcrumbs-content h2 {
-  color: #fff;
-  font-size: 98px;
+  color: black;
+  font-size: 50px;
   font-weight: 700;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 .bi-breadcrumbs-content ul {
-  padding: 18px 30px;
+  padding: 10px 30px;
   border-radius: 10px;
   display: inline-block;
   font-family: var(--heading);
@@ -19170,7 +19171,7 @@ CSS INDEX
   color: var(--base-color);
 }
 .bi-breadcrumbs-content ul li a {
-  color: #fff;
+  color: black;
 }
 .bi-breadcrumbs-content ul li:last-child {
   margin-right: 0;
@@ -19732,7 +19733,7 @@ CSS INDEX
 }
 
 .bi-team-details-contact-form {
-  padding: 40px;
+  padding: 25px;
   margin-top: 30px;
   border-radius: 20px;
   border: 1px solid rgba(22, 35, 43, 0.1);
@@ -20075,15 +20076,15 @@ CSS INDEX
 }
 .bi-blog-feed-item-3 .blog-text h3 {
   color: #0E0E0E;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 .bi-blog-feed-item-3 .blog-author-more {
   margin-top: 20px;
-  padding: 17px 20px;
+  padding: 17px 0px;
   border-radius: 10px;
-  background-color: rgba(22, 35, 43, 0.05);
+  /* background-color: rgba(22, 35, 43, 0.05); */
 }
 .bi-blog-feed-item-3 .blog-author-more .blog-author {
   max-width: 215px;
@@ -20690,7 +20691,10 @@ CSS INDEX
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 15px 20px 15px 15px;
-  background-color: rgba(22, 35, 43, 0.05);
+  /* background-color: rgba(22, 35, 43, 0.05); */
+  box-shadow: 3px 2px 3px lightgray;
+  background-color: #fff;
+ 
 }
 .bi-career-feed-item .inner-img {
   width: 152px;
@@ -21437,7 +21441,7 @@ CSS INDEX
     padding: 20px 15px;
   }
   .bi-slider-section {
-    padding-top: 70px;
+    padding-top: 0px;
   }
   .bi-skill-logo-text-area {
     -webkit-box-pack: center;
@@ -22349,15 +22353,73 @@ CSS INDEX
 }
 /*---------------------------------------------------- */
 
-@media screen and (min-width:320px) and (max-width:480px){
-  #hap-portfolio{
-    display: none !important;
-  }
+.bi-breadcrumb-bg-img{
+  height: 40vh ;
+  background-position:bottom center;
+  background-size: cover;
 }
 
-.back-red{
-  background-color: green;
+.hpt-footer-section{
+  background-color:#fff2e6 !important;
+  margin-top: 10px;
+  border-top: 2px solid #e89e70;
 }
-@media screen and (max-width: 560px) {
-  .back-red{
-    background-color:var(bas)!important;
+
+.hpt-footer-widget .footer-text p{
+  /* color: #f76407; */
+}
+
+.bi-section-heading-title h2{
+  font-size: 36px !important;
+}
+
+
+.bi-team-details-contact-form .question input{
+ 
+  position: relative;
+  height: 20px;
+  left: -20px;
+}
+
+.bi-team-details-contact-form .question .col-12{
+  height: 62px;
+  margin-left: 20px !important;
+}
+
+
+.form-control {
+  display: block;
+  width: 60%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.bi-blog-feed-item-3 .suma-title{
+  font-size: 35px;
+  /* text-align: center; */
+}
+
+.bi-blog-tex .bi-btn-1{
+  visibility: collapse !important;
+}
+.bi-about-img-3:before {
+  display: none;
+}
+
+@media screen and (max-width: 991px){
+.bi-about-video-play {
+    /* margin: 0 auto; */
+    max-width: 635px;
+}
+}
