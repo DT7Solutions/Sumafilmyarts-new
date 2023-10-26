@@ -596,7 +596,7 @@ select:visited {
 
 .bi-section-title-1 .bi-subtitle,
 .bi-section-title-2 .bi-subtitle {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   padding-left: 18px;
   margin-bottom: 10px;
@@ -615,7 +615,7 @@ select:visited {
   height: 12px;
   position: absolute;
   border-radius: 100%;
-  background-color: #0e0e0e;
+  /* background-color: #0e0e0e; */
 }
 .bi-section-title-1 .bi-subtitle:after,
 .bi-section-title-2 .bi-subtitle:after {
@@ -625,7 +625,7 @@ select:visited {
   height: 9px;
   border-radius: 100%;
   border: 2px solid #fff;
-  background-color: var(--base-color);
+  /* background-color: var(--base-color); */
 }
 .bi-section-title-1 h2,
 .bi-section-title-2 h2 {
@@ -666,15 +666,17 @@ select:visited {
 }
 
 .bi-section-title-3 .bi-subtitle {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
-  padding: 8px 15px;
+  /* padding: 8px 15px; */
   border-radius: 10px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   display: inline-block;
   color: var(--base-color);
   font-family: var(--heading);
-  border: 1px solid var(--base-color);
+  padding-top: 24px;
+  margin-top: 25% !important;
+  /* border: 1px solid var(--base-color); */
 }
 .bi-section-title-3 h2 {
   color: #fff;
@@ -683,7 +685,8 @@ select:visited {
   font-weight: 700;
 }
 .bi-section-title-3 p {
-  padding-top: 30px;
+  /* padding-top: 30px; */
+  /* text-align:justify !important; */
 }
 
 .dark-bg-title .bi-section-title-1 .bi-subtitle {
@@ -704,7 +707,7 @@ select:visited {
 }
 
 .bi-btn-1 a {
-  color: #fff;
+  color: #fff !important;
   font-size: 15px;
   font-weight: 700;
   overflow: hidden;
@@ -712,9 +715,9 @@ select:visited {
   border-radius: 10px;
   white-space: nowrap;
   display: inline-table;
-  padding: 20px 40px 17px;
+  padding: 10px 20px 10px;
   font-family: var(--heading);
-  background-color: var(--base-color);
+  background-color: #f76407;
 }
 .bi-btn-1 a:before, .bi-btn-1 a:after {
   content: "";
@@ -749,13 +752,13 @@ select:visited {
 }
 
 .bi-btn-3 a {
-  color: #fff;
+  color: #fff !important;
   font-weight: 700;
   padding: 9px 25px;
   border-radius: 5px;
   display: inline-block;
   font-family: var(--heading);
-  background-color: var(--base-color);
+  background-color: #f76407;
   border: 1.5px solid transparent;
 }
 .bi-btn-3 a i {
@@ -766,7 +769,7 @@ select:visited {
 }
 .bi-btn-3 a:hover {
   color: var(--base-color);
-  background-color: transparent;
+  background-color: black;
   border: 1.5px solid var(--base-color);
 }
 
@@ -4164,7 +4167,7 @@ select:visited {
 .bi-team-section-2 {
   z-index: 1;
   overflow: hidden;
-  padding: 120px 0px 55px;
+  /* padding: 120px 0px 55px; */
 }
 .bi-team-section-2 .bi-side-shape {
   z-index: -1;
@@ -5111,6 +5114,7 @@ select:visited {
 /*----------------------------------------------------*/
 .bi-about-section-3 {
   padding: 130px 0px;
+  padding-bottom: 70px;
   background-color: #111318;
 }
 .bi-about-section-3 .bi-shape-anim.anim_1 {
@@ -5312,6 +5316,7 @@ select:visited {
   line-height: 40px;
   font-family: var(--heading);
   padding-bottom: 40px;
+ 
 }
 .bi-about-text-quote-area .quote-author {
   margin-bottom: 50px;
@@ -10616,12 +10621,12 @@ CSS INDEX
 ******************************************************* 
 *************************************************************** */
 .home-6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--clr-body-text);
+  color: #6f6b80;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 30px;
 }
 
 .home-6 .img, .home-6 img {
@@ -10673,7 +10678,7 @@ CSS INDEX
 .home-6 h4,
 .home-6 h5,
 .home-6 h6 {
-  font-family: "Recoleta Alt";
+  font-family: "Open Sans", sans-serif;
   color: var(--clr-body-heading);
   margin-top: 0px;
   line-height: 1.12;
@@ -10721,11 +10726,11 @@ CSS INDEX
 }
 
 .home-6 p {
-  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 27px;
-  color: var(--clr-body-text);
+  line-height: 30px;
+  color: #6f6b80;
 }
 
 .home-6 hr {
@@ -10736,9 +10741,9 @@ CSS INDEX
 }
 
 .home-6 label {
-  color: var(--clr-common-black);
+  /* color: var(--base-color-text); */
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -12801,20 +12806,28 @@ CSS INDEX
   background: var(--linear, linear-gradient(90deg, #E02626 0%, #F0831F 100%));
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 0;
+  /* -webkit-text-fill-color: transparent; */
+  /* margin-bottom: 30px !important; */
   line-height: 1;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 13px 15px;
+  /* padding: 13px 10px !important; */
+  color:#ff4242 !important;
+  font-size: 18px !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  margin-top: 50% !important;
+  
 }
 .hpt-subtitle-1-wrap {
   display: inline-block;
   border-radius: 3px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(224, 38, 38, 0.1)), to(rgba(240, 131, 31, 0.1)));
-  background: linear-gradient(90deg, rgba(224, 38, 38, 0.1) 0%, rgba(240, 131, 31, 0.1) 100%);
-  margin-bottom: 15px;
+  /* background: -webkit-gradient(linear, left top, right top, from(rgba(224, 38, 38, 0.1)), to(rgba(240, 131, 31, 0.1))); */
+  /* background: linear-gradient(90deg, rgba(224, 38, 38, 0.1) 0%, rgba(240, 131, 31, 0.1) 100%); */
+  /* margin-bottom: 15px;
+  color:#ff4242 !important;
+  font-size: 18px !important; */
 }
 
 .hpt-title-1 {
@@ -13017,7 +13030,7 @@ CSS INDEX
   width: 100%;
   -webkit-animation: slideInDown 0.5s;
           animation: slideInDown 0.5s;
-  background: var(--linear, linear-gradient(90deg, #fff 0%, #F0831F 100%));
+  background: var(--linear,linear-gradient(90deg,#e02626 0,#f0831f 100%));
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -19010,7 +19023,7 @@ CSS INDEX
 }
 .hpt-footer-widget .widget-title {
   color: #f76508;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
   position: relative;
   padding-bottom: 5px;
@@ -19052,7 +19065,7 @@ CSS INDEX
 }
 .hpt-footer-widget .menu-widget li a {
   /* color: #f76508; */
-  font-size: 15px;
+  font-size: 18px;
   position: relative;
 }
 .hpt-footer-widget .menu-widget li a::before {
@@ -19068,7 +19081,7 @@ CSS INDEX
   transition: all 500ms ease;
 }
 .hpt-footer-widget .menu-widget li a:hover {
-  color: #E02626;
+  color: #f76407;
 }
 .hpt-footer-widget .menu-widget li a:hover::before {
   width: 100%;
@@ -19076,7 +19089,7 @@ CSS INDEX
 
 .hpt-footer-social-content {
   padding-bottom: 15px;
-  border-bottom: 1px solid #16232B;
+  border-bottom: 1px solid #60626d;
 }
 .hpt-footer-social-content ul {
   display: -webkit-box;
@@ -19084,7 +19097,7 @@ CSS INDEX
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content:space-evenly;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hpt-footer-social-content ul {
@@ -19097,16 +19110,16 @@ CSS INDEX
   }
 }
 .hpt-footer-social-content ul li {
-  color: #fff;
-  font-size: 21px;
+  color: var(--clr-body-text);
+  font-size: 20px;
   font-weight: 600;
 }
 .hpt-footer-social-content ul li i {
-  font-size: 17px;
+  font-size: 18px;
   margin-right: 8px;
 }
 .hpt-footer-social-content ul li a:hover {
-  color: #E02626;
+  color: #f76407;
 }
 
 .hpt-footer-logo {
@@ -19290,11 +19303,12 @@ CSS INDEX
   padding-bottom: 10px;
 }
 .bi-service-feed-item .service-text p {
-  color: #555;
-  font-size: 16px;
+  color: #6f6b80;
+  font-size: 18px;
   padding-bottom: 25px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  text-align:justify;
 }
 .bi-service-feed-item .service-text .read_more {
   width: 60px;
@@ -19750,7 +19764,7 @@ CSS INDEX
   background: rgba(22, 35, 43, 0.05);
 }
 .bi-team-details-contact-form input::-webkit-input-placeholder, .bi-team-details-contact-form textarea::-webkit-input-placeholder {
-  font-size: 14px;
+  font-size: 18px !important;
   color: #555;
   font-family: var(--heading);
 }
@@ -19783,13 +19797,13 @@ CSS INDEX
   border: none;
   font-size: 15px;
   font-weight: 700;
-  padding: 18px 30px;
+  padding: 18px 33px;
   border-radius: 5px;
   text-transform: uppercase;
   font-family: var(--heading);
   -webkit-transition: all 200ms linear 0ms;
   transition: all 200ms linear 0ms;
-  background-color: var(--base-color);
+  background-color: #f76407;
 }
 .bi-team-details-contact-form button:hover {
   background-color: #000000;
@@ -20019,7 +20033,7 @@ CSS INDEX
   border: 2px solid #fff;
   border-left: none;
   font-family: var(--heading);
-  background-color: var(--base-color);
+  background-color: #f76407;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -20033,7 +20047,7 @@ CSS INDEX
   padding-bottom: 10px;
 }
 .bi-blog-feed-item-2 .blog-text p {
-  font-size: 16px;
+  font-size: 18px;
 }
 .bi-blog-feed-item-2:hover .blog-img img {
   -webkit-transform: scale(1.05);
@@ -20049,7 +20063,7 @@ CSS INDEX
 .bi-blog-feed-item-3 .blog-img {
   overflow: hidden;
   border-radius: 10px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 .bi-blog-feed-item-3 .blog-img img {
   -webkit-transition: all 500ms ease;
@@ -20081,8 +20095,8 @@ CSS INDEX
   padding-bottom: 10px;
 }
 .bi-blog-feed-item-3 .blog-author-more {
-  margin-top: 20px;
-  padding: 17px 0px;
+  /* margin-top: 20px; */
+  /* padding: 17px 0px; */
   border-radius: 10px;
   /* background-color: rgba(22, 35, 43, 0.05); */
 }
@@ -20676,7 +20690,7 @@ CSS INDEX
   padding-bottom: 15px;
 }
 .bi-career-item .inner-text p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .bi-career-feed-section {
@@ -20691,9 +20705,9 @@ CSS INDEX
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 15px 20px 15px 15px;
-  /* background-color: rgba(22, 35, 43, 0.05); */
+  background-color: rgba(22, 35, 43, 0.05);
   box-shadow: 3px 2px 3px lightgray;
-  background-color: #fff;
+  
  
 }
 .bi-career-feed-item .inner-img {
@@ -20708,7 +20722,7 @@ CSS INDEX
 }
 .bi-career-feed-item .inner-text h3 {
   color: #0E0E0E;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   padding-bottom: 10px;
 }
@@ -22285,7 +22299,7 @@ CSS INDEX
     padding: 50px 30px;
   }
   .inner-page-padding {
-    padding: 60px 0px;
+    padding: 50px 0px;
   }
   .bi-pagination li a {
     width: 45px;
@@ -22361,7 +22375,7 @@ CSS INDEX
 
 .hpt-footer-section{
   background-color:#fff2e6 !important;
-  margin-top: 10px;
+  margin-top: -1px;
   border-top: 2px solid #e89e70;
 }
 
@@ -22377,12 +22391,18 @@ CSS INDEX
 .bi-team-details-contact-form .question input{
  
   position: relative;
-  height: 20px;
-  left: -20px;
+  /* height:20px; */
+  /* left: -8px; */
+  width: 60%;
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 30px;
+  
+
 }
 
 .bi-team-details-contact-form .question .col-12{
-  height: 62px;
+  /* height: 62px; */
   margin-left: 20px !important;
 }
 
@@ -22422,4 +22442,64 @@ CSS INDEX
     /* margin: 0 auto; */
     max-width: 635px;
 }
+}
+
+
+.bi-section-title-3 p {
+  text-align: justify !important;
+  margin-top: 150px;
+  /* text-align: center; */
+}
+
+.bi-section-title-3 .pera-content{
+  text-align: justify !important;
+}
+
+.bi-career-details-text h5{
+  color: #6f6b80;
+}
+
+.bi-team-details-contact-form .form-select {
+  display: block;
+  width: 49%;
+  margin-bottom: 20px !important;
+  border-bottom: 2px solid #e7e2e2 !important;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  border: 0;
+  /* -moz-padding-start: calc(0.75rem - 3px); */
+  font-size: 1rem;
+  /* font-weight: 400; */
+  /* line-height: 1.5; */
+  color: #6f6b80;
+  /* background-color: #fff; */
+  /* background-repeat: no-repeat; */
+  /* background-position: right 0.75rem center; */
+  /* background-size: 16px 12px; */
+  /* border-radius: 0.375rem; */
+  /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  /* appearance: none; */
+}
+
+@media (min-width: 992px){
+.footer-content-text {
+  width: 20% !important;
+}
+}
+
+.portfolio-main-title {
+  color: #f76407 !important;
+}
+
+.blog-text{
+  text-align: justify;
+}
+
+.bi-blog-details-text-area{
+  text-align: justify;
+}
+
+.hpt-about-1-section-title p, .pt-3{
+  text-align: justify;
 }

@@ -9,7 +9,7 @@
         <div class="bi-breadcrumbs-content headline ul-li text-center">
             <h2>Your Ideas</h2>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li>Your Ideas</li>
             </ul>
         </div>
@@ -27,72 +27,42 @@
         <div class="bi-team-details-contact-info headline pera-content">
             <div class="bi-team-details-contact-title">
                 <div class="bi-team-details-contact-form">
-                    <form action="#" method="get">
-                        <div class="row">
-                            <h3 class="text-center">Fill the form</h3>
-                            <div class="col-md-6">
-                                <input type="text" name="name" placeholder="First Name">
+                    <h3 class="text-center pb-4">Fill the form</h3>
+                    <form method="POST" class="row g-3 applyform"  id="ideaform" enctype="multipart/form-data"  autocomplete="off">
+                        {% csrf_token %}
+                        <div class="col-md-6 col-12">
+                            <input type="text" name="fname" class="form-control" id="fname" placeholder="Full Name" required>
+                        </div>
+                       
+                        <div class="col-md-6 col-12">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <input type="number" name="phone" class="form-control" id="phone" placeholder="Phonenumber" required>
+                        </div>
+
+
+                        <div class="col-md-6 col-12">
+                            <input type="text" name="subject" class="form-control" id="subject"
+                                placeholder="Title of Your Concept" required>
+                        </div>
+                        <div id="hide" class="col-lg-8 col-xs-8">
+                            <div class="col-12 pt-2">
+                                <label for="file" class="custom-file-upload" id="choose-file-label">
+                                    Upload file
+                                 </label>
+                                 <input name="file" type="file" id="file" 
+                                    accept=".jpg,.jpeg,.pdf,doc,docx,application/msword,.png" style="display: none;" />
                             </div>
-                            <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Last Name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="email" placeholder="Email">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="name" placeholder="phonenumber">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Title of Your Concept">
-                            </div>
-                            <!-- <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Message">
-                            </div> -->
-                            <!-- <div>
-                                <label for=""><h5>Kind of collaborations</h5></label>
-                            </div> -->
-                            <!-- <div class="question pb-4">
-                                <div class="inputstate"><b>What are you looking for</b></div>
-                                <div class="form-group col-md-8">   
-                                    <select class="form-control" id="inputState" name="inputState">
-                                        <option value="SelectState">-- select -- </option>
-                                        <option value="sponcer">Want to Sponsor </option>
-                                        <option value="BrandAmbassador">Want a Brand Ambassador</option>        
-                                    </select>
-                                  </div>
-                                <div>
-                                    <div class="form-group col-md-8 pt-3">
-                                        <div class="inputDistrict"><b>Kind of sponsorship</b></div>
-                                        <select class="form-control" id="inputDistrict" name="inputDistrict">
-                                            <option value="">-- select -- </option>
-                                        </select>
-                                    </div>
-        
-                                </div>
-                            </div>
-                              -->
-                              
-                            
-                            <!-- <div class="col-md-6">
-                                <input type="text" name="email" placeholder="Portfolio / Website link..">
-                            </div> -->
-                            <!-- <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Your expected salary">
-                            </div> -->
-                            <div class="col-md-12 ">
-                                <div class="upload-cv headline">
-                                    <!-- <h3>Upload CV</h3> -->
-                                    <input type="file" id="file" name="file" accept=".txt, .pdf, .doc, .docx">
-                                </div>
-                            </div>
-                            <!-- <div class="col-md-12">
-                                <textarea name="message" placeholder="Your Message"></textarea>
-                            </div> -->
-                            <div class="col-md-12">
-                                <div class="ai-submit-btn d-flex">
-                                    <button>Send messages</button>
-                                </div>
-                            </div>
+                            <span class="fileupload-req text-danger">please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
+                        </div>
+                    
+                       
+                        <script src='https://www.google.com/recaptcha/api.js'></script>
+                        <div class="g-recaptcha px-3 mb-2" data-sitekey="6LfvVUskAAAAAGlwyp52_FaIJu4vaTuJQ7RiGOJd" required></div>
+
+                        <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
+                            <button type="button" href="#" class="btn btn-primary form-sub-btn submit">Send</button>
                         </div>
                     </form>
                 </div>

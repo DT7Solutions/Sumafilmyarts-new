@@ -1,0 +1,462 @@
+.coll-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:20px;
+}
+.coll-img{
+    width:200px;
+    height:200px;
+    background-size: cover;
+}
+.partner{
+    width:400px;
+    height:320px;
+    background-size: cover;
+    border-radius:3px;
+
+}
+.collbration-container{
+    display:flex;
+    background-color: #f8f9fa;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    
+}
+.cancer-care{
+    display:flex;
+    margin:20px;
+    justify-content:center;
+    flex-wrap: wrap;
+    border-radius:5px;
+    
+}
+.cancer-care-description{
+   
+    font-weight: 500;
+    font-size:17px;
+}
+.cancer-care-content{
+    display:flex;
+    flex-direction: column;
+}
+
+.cancer-care-text{
+    color:#f75023;
+    font-family:sans-serif,"Jost";
+    
+}
+.cancer-care-content p{
+    margin-top: -3px !important;
+}
+.cancer-care-content  button{
+    margin-top: 18px;
+}
+/* .cancer-care-content .btn {
+    border:none;
+    border-radius:15px;
+    color: #f8f9fa;
+    width: 15%;
+} */
+
+.cancer-care-button{
+    width:110px;
+    height: 40px;
+    background-color: #f75023 !important;
+    border:none;
+    border-radius:12px;
+    color: white;
+}
+.partners-imgs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow:hidden;
+    
+}
+/* .partners-logos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}  */
+
+.owl-stage{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+ #contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../collabrations/collabration-img/sumafilmyarts-collabrations-page-backgroundimage-1920x1080.jpg) no-repeat center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+.container > p{
+    font-size: 32px;
+}
+.question{
+    width: 75%;
+}
+.options{
+    position: relative;
+    padding-left: 30px;
+}
+#options label{
+    display: block;
+    margin-bottom: -55px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.options input{
+    opacity: 0;
+}
+.checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    /* background-color: rgb(71, 71, 71); */
+    border: 2px solid rgb(148, 146, 146);
+    border-radius: 50%;
+}
+.options input:checked ~ .checkmark:after {
+    display: block;
+}
+.options .checkmark:after{
+    content: "";
+	width: 10px;
+    height: 10px;
+    display: block;
+	background: white;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 300ms ease-in-out 0s;
+}
+.options input[type="radio"]:checked ~ .checkmark{
+    background: #f75023;
+    transition: 300ms ease-in-out 0s;
+}
+.options input[type="radio"]:checked ~ .checkmark:after{
+    transform: translate(-50%,-50%) scale(1);
+}
+.btn-primary{
+    background-color: #555;
+    color: #ddd;
+    border: 1px solid #ddd;
+}
+.btn-primary:hover{
+    background-color: #bf6d21;
+    border: 1px solid #f75023;
+}
+.btn-success{
+    padding: 5px 25px;
+    background-color: #f75023;
+}
+@media(max-width:576px){
+    .question{
+        width: 100%;
+        word-spacing: 2px;
+    } 
+}
+
+.collabration-card{
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 8px;
+}
+#formfile{
+    /* background-color: aqua; */
+    position: relative;
+    height: 38px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.choosefile-sponosor{
+    position:absolute;
+    
+    bottom: 18%;
+    font-size: 14px;
+    background-color: #f76407;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    color:aliceblue;
+    max-width:190px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choosefile-idea2{
+    position:absolute;
+    
+    bottom: 24.5%;
+    font-size: 14px;
+    background-color: #f76407;
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+    color:aliceblue;
+    max-width:190px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .choosefile-idea{
+    position:absolute;
+    bottom: 25.5%;
+    font-size: 14px;
+    background-color: #f76407;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    color:aliceblue;
+    max-width:190px;
+    display: flex;
+    flex-wrap: wrap;
+
+} */
+
+.choosefile{
+    position:absolute;
+    right:80%;
+    bottom: 16.5%;
+    font-size: 14px;
+    background-color: #f76407;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color:aliceblue;
+    max-width:190px;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+
+
+
+@media(max-width:400px) {
+    .choosefile-sponosor{
+        bottom: 22%;
+       
+    }
+   
+    
+}
+
+
+
+@media(max-width: 399px) {
+    .choosefile {
+        position:absolute;
+        right:60%;
+        bottom: 16.5%;
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: -15px;
+   
+    }
+    .fileupload-req{
+        padding-top: 14px;
+    }
+}
+@media(max-width:320px) {
+    .choosefile {
+        position:absolute;
+        right:60%;
+        bottom: 16.5%;
+        font-size: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: -15px;
+   
+    }
+   
+    
+} 
+@media(max-width:412px) {
+    .choosefile {
+        position:absolute;
+        right:70%;
+        margin-top: 8px;
+        
+   
+    }   
+} 
+
+@media screen and (min-width:400px) and (max-width:480px) {
+    .choosefile{
+        bottom: 18%;
+        padding: 10px;
+    }
+}
+
+input[type=checkbox] {
+    visibility: visible;
+    height: 20px;
+    width: 20px;
+    display: block;
+    border-radius: 50% !important;
+    align-items: center !important;
+}
+.script {
+    padding-left: 5px;
+}
+
+#ifYes{
+    display: none;
+}
+.ifno{
+    display: none;
+}
+
+.choosefile-COL {
+    position: absolute;
+    bottom: 17%;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f76407;
+    border-radius: 5px;
+    padding: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+    color: aliceblue;
+    /* max-width: 220px; */
+    display: flex;
+    flex-wrap: wrap;
+   
+ 
+
+}
+
+
+.collaboration-card .card{
+    max-width: 40rem;
+}
+
+
+/* @media screen and (min-width:679px) and (max-width:1040px) {
+    .collaboration-card .card{
+       margin-left: 145px;
+    }
+} */
+@media screen and (min-width:679px) and (max-width:768px) {
+    .collaboration-card .card{
+       margin-left: 50px;
+    }
+}
+
+.sponcership .card{
+    max-width: 40rem;
+}
+
+/* @media screen and (min-width:679px) and (max-width:1040px) {
+    .sponcership .card{
+       margin-left: 140px;
+    }
+} */
+@media screen and (min-width:679px) and (max-width:768px) {
+    .sponcership .card{
+       margin-left: 40px;
+    }
+}
+
+/* @media screen and (min-width:679px) and (max-width:1040px) {
+    .enquiries .card{
+       margin-left: 140px;
+    }
+}
+@media screen and (min-width:679px) and (max-width:768px) {
+    .enquiries .card{
+       margin-left: 40px;
+    }
+} */
+
+
+
+@media screen and (min-width:679px) and (max-width:1040px) {
+    .idea-form .card{
+       /* margin-left: 145px; */
+    }
+}
+@media screen and (min-width:679px) and (max-width:768px) {
+    .idea-form .card{
+       margin-left: 40px;
+    }
+}
+/* .message{
+    position: relative;
+} */
+
+.choosefile-collab{
+    position:absolute;
+    bottom: 35.1%;
+    font-size: 14px;
+    background-color: #f76407;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:aliceblue;
+    max-width:190px;
+    display: none;
+    flex-wrap: wrap;
+
+}
+
+ @media screen and (min-width:820px) and (max-width:820px) {
+    .collaboration-card .card{
+        margin-left: 55px;
+     }
+    .sponcership .card{
+        margin-left: 50px;
+     }
+    .enquiries .card{
+        margin-left: 50px;
+     }
+    .idea-form .card{
+        margin-left: 50px;
+     }
+} 
+
+
+
+.custom-file-upload{
+    background: #f76407 !important; 
+    color: white;
+    padding: 6px;
+    border: 1px solid #e3e3e3; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+  }

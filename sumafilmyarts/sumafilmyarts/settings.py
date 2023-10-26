@@ -29,6 +29,16 @@ SECRET_KEY = 'django-insecure-x2@t@w%#jze*96g5umz2np=*t1c-731m&e624^wx%dd719ojzt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'kajasuresh522@gmail.com'
+EMAIL_HOST_PASSWORD = 'ohix ylqx nyqq bipp'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+
+
 ALLOWED_HOSTS = []
 
 
@@ -122,6 +132,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
+UPLOAD_URL = "/media/"
 # STATICFILES_DIRS =[
 #     STATIC_DIR,
 # ]

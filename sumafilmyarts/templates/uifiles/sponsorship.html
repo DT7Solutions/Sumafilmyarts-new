@@ -9,7 +9,7 @@
         <div class="bi-breadcrumbs-content headline ul-li text-center">
             <h2>Sponsorship</h2>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li>Sponsorship</li>
             </ul>
         </div>
@@ -27,71 +27,75 @@
         <div class="bi-team-details-contact-info headline pera-content">
             <div class="bi-team-details-contact-title">
                 <div class="bi-team-details-contact-form">
-                    <form action="#" method="get">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" name="name" placeholder="First Name">
+                    <form method="post" class="row g-3 applyform"  id="sponsorshipform" enctype="multipart/form-data"  autocomplete="off">
+                        {% csrf_token %}
+                       <div class="col-md-6 col-6">
+                        <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First Name" required>
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last Name" required>
+                    </div>
+                        <div class="col-md-6 col-12">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-6 col-12">
+
+                            <input type="number" name="phone" class="form-control" id="phone" placeholder="Phonenumber" required>
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <input type="text" name="brand" class="form-control" id="brand" placeholder="Name of Brand/Agency " required>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <input type="text" name="industry" class="form-control" id="industry" placeholder="Industry" required>
+                        </div>
+                    
+                        <div class="question">
+                            <div class="form-group col-md-8">
+                                <label for="inputState">What are you looking for</label>
+                                <select class="form-control" id="inputState" name="inputState">
+                                    <option value="SelectState">-- select -- </option>
+                                    <option value="sponcer">Want to Sponsor </option>
+                                    <option value="BrandAmbassador">Want a Brand Ambassador</option>        
+                                </select>
+                              </div>
+                              <div class="form-group col-md-8">
+                                <label for="inputDistrict">Kind of sponsorship</label>
+                                <select class="form-control" id="inputDistrict" name="inputDistrict">
+                                    <option value="">-- select -- </option>
+                                </select>
+                              </div>
+
+                        </div>
+
+
+                        <!-- <div class="col-12">
+                            <input type="text" name="message" class="form-control" id="message"
+                                placeholder="Remarks/Questions" required>
+                        </div> -->
+                        
+                        <div id="hide" class="col-lg-8 col-xs-8">
+                            <div class="col-12 pt-2">
+                                <label for="file" class="custom-file-upload" id="choose-file-label">
+                                    Upload file
+                                 </label>
+                                 <input name="file" type="file" id="file" 
+                                    accept=".jpg,.jpeg,.pdf,doc,docx,application/msword,.png" style="display: none;" />
                             </div>
-                            <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Last Name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="email" placeholder="Email">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="name" placeholder="phonenumber">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Name Of Brand/Agency">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Industry">
-                            </div>
-                            <!-- <div>
-                                <label for=""><h5>Kind of collaborations</h5></label>
-                            </div> -->
-                            <div class="question pb-4">
-                                <div class="inputstate"><b>What are you looking for</b></div>
-                                <div class="form-group col-md-8">   
-                                    <select class="form-control" id="inputState" name="inputState">
-                                        <option value="SelectState">-- select -- </option>
-                                        <option value="sponcer">Want to Sponsor </option>
-                                        <option value="BrandAmbassador">Want a Brand Ambassador</option>        
-                                    </select>
-                                  </div>
-                                <div>
-                                    <div class="form-group col-md-8 pt-3">
-                                        <div class="inputDistrict"><b>Kind of sponsorship</b></div>
-                                        <select class="form-control" id="inputDistrict" name="inputDistrict">
-                                            <option value="">-- select -- </option>
-                                        </select>
-                                    </div>
-        
-                                </div>
-                            </div>
-                             
-                              
-                            
-                            <!-- <div class="col-md-6">
-                                <input type="text" name="email" placeholder="Portfolio / Website link..">
-                            </div> -->
-                            <!-- <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Your expected salary">
-                            </div> -->
-                            <div class="col-md-12 ">
-                                <div class="upload-cv headline">
-                                    <h3>Upload CV</h3>
-                                    <input type="file" id="file" name="file" accept=".txt, .pdf, .doc, .docx">
-                                </div>
-                            </div>
-                            <!-- <div class="col-md-12">
-                                <textarea name="message" placeholder="Your Message"></textarea>
-                            </div> -->
-                            <div class="col-md-12">
-                                <div class="ai-submit-btn d-flex">
-                                    <button>Send messages</button>
-                                </div>
-                            </div>
+                            <span class="fileupload-req text-danger">please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
+                            <!-- <label class="d-block custom-file-button">
+                                <input  name="file" id="file" type="file" class="form-control" required placeholder="Upload Resume"  
+                                accept="application/msword,application/msword,application/pdf" style="padding-left: 0px!important;border: none;"/>
+                                <span class="fileupload-req text-danger">please upload .pdf and .doc,.docx and size must be 2.5 mb</span>
+                                <span class="choosefile-sponosor" >Upload a File</span>
+                            </label> -->
+                        </div>
+                       
+                        <script src='https://www.google.com/recaptcha/api.js'></script>
+                        <div class="g-recaptcha px-3 mb-2" data-sitekey="6LfvVUskAAAAAGlwyp52_FaIJu4vaTuJQ7RiGOJd" required></div>
+
+                        <div class="carrer_tm_button wow fadeInUp" data-wow-duration="1s">
+                            <button type="submit" id="sponcerid" href="#" class="btn btn-primary form-sub-btn">Send</button>
                         </div>
                     </form>
                 </div>
