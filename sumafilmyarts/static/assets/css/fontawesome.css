@@ -8152,6 +8152,8 @@ readers do not read off random characters that represent icons */
 .fal {
   font-family: 'Font Awesome 5 Pro';
   font-weight: 300;
+  color: white;
+  margin-top: -5px !important;
 }
 @font-face {
   font-family: 'Font Awesome 5 Pro';
