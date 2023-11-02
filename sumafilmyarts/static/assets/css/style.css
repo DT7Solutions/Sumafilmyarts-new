@@ -4190,7 +4190,7 @@ select:visited {
 
 .bi-team-item-2 {
   margin: 0 auto;
-  max-width: 373px;
+  /* max-width: 373px; */ 
   margin-bottom: 40px;
 }
 .bi-team-item-2 .team-shape.shape_1, .bi-team-item-2 .team-shape.shape_2 {
@@ -19757,8 +19757,8 @@ CSS INDEX
 }
 .bi-team-details-contact-info .bi-team-details-contact-title h3 {
   color: #0E0E0E;
-  font-size: 34px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 400;
   padding-bottom: 15px;
 }
 .bi-team-details-contact-info .bi-team-details-contact-title p {
@@ -20039,6 +20039,7 @@ CSS INDEX
 .bi-blog-feed-item-2 .blog-img {
   overflow: hidden;
   margin-bottom: 25px;
+  border-radius: 10px;
 }
 .bi-blog-feed-item-2 .blog-img img {
   -webkit-transition: all 500ms ease;
@@ -20385,7 +20386,7 @@ CSS INDEX
   border-radius: 10px;
   border: 1px solid rgba(22, 35, 43, 0.1);
 }
-.bi-career-details-text-area .bi-career-details-img {
+.bi-career-details-text-area .bi-career-details-img img{
   border-radius: 10px;
   margin-bottom: 40px;
 }
@@ -21789,7 +21790,7 @@ CSS INDEX
   line-height: 60px !important;
 }
 .bi-team-details-contact-form input::-webkit-input-placeholder, .bi-team-details-contact-form textarea::-webkit-input-placeholder{
-  font-size: 30px !important;
+  font-size: 35px !important;
 }
 .bi-blog-feed-item-3 .blog-text h3{
   font-size: 45px;
@@ -21927,29 +21928,158 @@ CSS INDEX
 }
 .bi-career-item .inner-text p{
   font-size: 20px;
-  /* line-height: 35px; */
+  line-height: 30px;
 }
 .bi-career-feed-item .inner-img {
-  width: 50%;
-  height: auto;
+  width:352px;
+  height: 352px;
   overflow: hidden;
   margin-right: 30px;
   border-radius: 10px;
 }
 .bi-career-feed-item .inner-text h3{
-  font-size: 35px;
+  font-size: 45px;
   line-height: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
+
 .bi-career-feed-item .inner-text li {
   font-size: 35px;
   padding-top: 20px;
 }
 .bi-career-feed-item .inner-text p{
-  font-size: 30px;
-  padding-bottom: 45px;
+  font-size: 40px;
+  /* padding-bottom: 60px; */
   line-height: 50px;
   text-align: justify !important;
 }
+.bi-career-details-text h5 {
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+.bi-portfolio-details-content p{
+  font-size: 30px;
+  line-height: 40px;
+  padding-bottom: 50px;
+}
+.bi-career-details-text-area li{
+  font-size: 30px;
+  line-height: 40px;
+}
+.bi-portfolio-sidebar h3{
+  font-size: 45px;
+}
+.bi-portfolio-sidebar li span {
+  font-size: 35px;
+  line-height: 40px;
+}
+.bi-portfolio-sidebar li span {
+  font-size: 35px;
+  line-height:50px;
+}
+.bi-portfolio-sidebar li .info{
+  font-size: 25px;
+  line-height: 30px;
+}
+.bi-career-details-text-area .bi-btn-3 a {
+  font-size: 30px;
+  padding: 20px 30px;
+}
+.bi-btn-3 a{
+  font-size: 30px;
+  padding: 20px 30px;
+}
+.bi-career-feed-item .inner-text li i {
+  padding-bottom: 30px;
+}
+
+.h5{
+  font-size: 40px;
+}
+.question label{
+  font-size: 24px;
+}
+input[type=checkbox] {
+  visibility: visible;
+  height: 30px !important;
+  width: 20px;
+  display: block;
+  border-radius: 50% !important;
+}
+.custom-file-upload{
+  font-size: 35px !important;
+  padding: 20px 25px !important;
+  padding-bottom:20px !important;
+}
+.text-danger{
+  font-size: 25px !important;
+}
+.bi-team-details-contact-form button {
+  color: #fff;
+  border: none;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 25px 75px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  -webkit-transition: all 200ms linear 0ms;
+  transition: all 200ms linear 0ms;
+  background-color: #f76407;
+  margin-top: 20px;
+}
+.portfolio-main-title{
+  font-size: 50px !important;
+  line-height: 30px !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.bi-team-details-contact-form .form-select{
+  font-size: 25px !important; 
+}
+.bi-team-details-contact-form{
+  padding: 25px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 3px solid rgba(22, 35, 43, 0.1);
+}
+.bi-team-details-contact-form h6{
+  font-size: 23px;
+}
+/* .form-control{
+  font-size: 2rem !important;
+} */
+.bi-blog-feed-item-3 {
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 3px solid rgba(22, 35, 43, 0.1);
+}
+.bi-career-details-text-area .bi-career-details-img img{
+  border-radius: 10px !important;
+}
+.bi-team-details-contact-form h3{
+  font-size:25px !important;
+}
+.bi-team-details-contact-form input{
+  width: 100%;
+  height: 80px;
+  border: none;
+  color: #555;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(22, 35, 43, 0.05);
+}
+/* .bi-career-item .inner-text {
+  margin: 0 auto;
+  max-width: 250px; */
+
+
+
 
 
 
