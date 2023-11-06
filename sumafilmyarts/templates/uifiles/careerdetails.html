@@ -18,8 +18,92 @@
 
 <!--breadcrumb section end-->
 
+{% if careerposts %}
 <!--Contact page section start-->
 <section id="bi-career-details" class="bi-career-details-section inner-page-padding">
+    <div class="container">
+        <div class="bi-portfolio-details-content">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="bi-career-details-text-area">
+                        <div class="bi-career-details-img">
+                        <img src="/media/{{careerposts.Image2}}" alt="">
+                        </div>
+                        <div class="bi-career-details-text headline pera-content ul-li-block">
+                           {{careerposts.Body}}
+                            <!-- <h4>Salary Range</h4>
+                            <div class="salary-limit">$15000 USD - 20000 USD</div> -->
+                            <div class="bi-btn-3 text-center text-uppercase pt-4">
+                                <a href="/applyjobform/">Apply Now<i class="fas fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bi-portfolio-sidebar headline ul-li-block">
+                        <h3>Job Summery </h3>
+                        <ul>
+                            <li>
+                                <span class="title">Location :</span>
+                                <span class="info">{{careerposts.location}}</span>
+                            </li>
+                            <li>
+                                <span class="title">Job Title:</span>
+                                <span class="info">{{careerposts.job_title}}</span>
+                            </li>
+                            <li>
+                                <span class="title">Experience:</span>
+                                <span class="info">{{careerposts.experience}}</span>
+                            </li>
+                            <li>
+                                <span class="title">Gender:</span>
+                                <span class="info">{{careerposts.gender}}</span>
+                            </li>
+                            <li>
+                                <span class="title">Age:</span>
+                                <span class="info">{{careerposts.age}}</span>
+
+                                <!-- <select>
+                                    <option selected="">Work Experinces</option>
+                                    <option>1 - 2 years</option>
+                                    <option>2 - 4 years</option>
+                                    <option>4 - 7 years</option>
+                                    <option>7 - 10 years</option>
+                                </select> -->
+                            </li>
+                            
+                            <!-- <li>
+                                <span class="title">Age:</span>
+                                <span class="info">18 to 40 Years</span>
+                            </li> -->
+                            <li>
+                                <span class="title">Working Time:</span>
+                                <span class="info">{{careerposts.workingtime}}</span>
+                            </li>
+                            <li>
+                                <span class="title">Deadline:</span>
+                                <span class="info">{{careerposts.dead_line}}</span>
+                            </li>
+                        </ul>
+                        <!-- <div class="bi-btn-3 text-center text-uppercase">
+                            <a class="px-3 py-2" href="">Apply Now<i class="fas fa-long-arrow-right"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact page section end-->
+{% endif %}
+
+
+
+
+
+
+<!--Contact page section start-->
+<!-- <section id="bi-career-details" class="bi-career-details-section inner-page-padding">
     <div class="container">
         <div class="bi-portfolio-details-content">
             <div class="row">
@@ -51,9 +135,9 @@
                                 <li>This is a full-time job opportunity for creative individuals who are passionate about storytelling and have a strong sense of visual media. If you are a talented writer looking for an exciting opportunity to work with a dynamic and growing production company, then we encourage you to apply today.</li>
                                 <li>Note:Please note that this is not a role for serial or movie script/story writers.</li>
                             </ul>
-                            <!-- <h4>Salary Range</h4>
+                            <h4>Salary Range</h4>
                             <div class="salary-limit">$15000 USD - 20000 USD</div> -->
-                            <div class="bi-btn-3 text-center text-uppercase">
+                            <!-- <div class="bi-btn-3 text-center text-uppercase">
                                 <a href="/applyjobform/">Apply Now<i class="fas fa-long-arrow-right"></i></a>
                             </div>
                         </div>
@@ -81,7 +165,7 @@
                             </li>
                             <li>
                                 <span class="title">Age:</span>
-                                <span class="info">18 to 40 Years</span>
+                                <span class="info">18 to 40 Years</span> -->
 
                                 <!-- <select>
                                     <option selected="">Work Experinces</option>
@@ -96,7 +180,7 @@
                                 <span class="title">Age:</span>
                                 <span class="info">18 to 40 Years</span>
                             </li> -->
-                            <li>
+                            <!-- <li>
                                 <span class="title">Working Time:</span>
                                 <span class="info">08:00 AM to 06:00 PM</span>
                             </li>
@@ -104,16 +188,16 @@
                                 <span class="title">Deadline:</span>
                                 <span class="info">20 June, 2023</span>
                             </li>
-                        </ul>
-                        <div class="bi-btn-3 text-center text-uppercase">
+                        </ul> -->
+                        <!-- <div class="bi-btn-3 text-center text-uppercase">
                             <a href="#">Apply Now<i class="fas fa-long-arrow-right"></i></a>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!--Contact page section end-->
 
 {% endblock %}

@@ -18,15 +18,16 @@
 
 <!--breadcrumb section end-->
   
-
+{% if blogdetails %}
 <!--blogs section start-->
 <section id="bi-blog-details" class="bi-blog-details-section inner-page-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="bi-blog-details-content">
+                  
                     <div class="bi-blog-details-img">
-                        <img src="{% static 'assets/img/blog/bfd10.png' %}" style="width: 100%" alt="">
+                        <img src="/media/{{blogdetails.Image1}}" style="width: 100%" height="300" alt="">
                     </div>
                     <!-- <div class="bi-blog-details-meta d-flex  text-uppercase ul-li">
                         <ul>
@@ -35,23 +36,12 @@
                             <li><a href="#"><i class="fas fa-comments-alt"></i> (02) Comments</a></li>
                         </ul>
                     </div> -->
+                    <h3>{{blogdetails.Title}}</h3>
                     <div class="bi-blog-details-text-area headline pera-content">
-                        <h4>Idea behind Suma Filmy Arts – The Inspiring Journey of Suma KanakalaRead More</h4>
+                        {{blogdetails.Body}}
                         
-                        <p>Suma Filmy Arts is one of the top production houses in Hyderabad. Our team has over 30 years of combined experience in the Telugu television and film industry. We are known for our quality productions and our ability to entertain our audience. Our team is led by Suma Kanakala, an award-winning presenter, actress, and producer who has been working in Telugu television for over 30 years. Her humour and ability to combine modernity with tradition have earned her a plethora of admirers, making her one of the most respected presenters in the TV industry.</p>
-                       
-                        <h4>Suma Filmy Arts – A leading Telugu Production House</h4>
-                        <p>Suma Filmy Arts is undoubtedly a leading name in the Telugu production house industry. With over 30 years of collective experience in Tollywood, they are highly acclaimed for their utmost quality productions. Based in Hyderabad, they have been at the vanguard of bringing some of the best projects as a productions house to life. From creativity to technical excellence, Suma Filmy Arts sets a high benchmark for others in the field and stands as one of the best production houses in the city.</p>
                         
-                        <h4>The Journey of Suma Kanakala and What Inspired Her to Start Suma Filmy Arts</h4>
-                        <p>With over 30 years of experience in the Telugu film and television industry, Suma Kanakala is an iconic figure that has made a name for herself as a versatile actress, presenter, and producer. Her remarkable ability to merge modernity with tradition has seen her rise as one of the most beloved faces across all realms of entertainment. It was this drive that inspired her to launch Suma Filmy Arts, one of the best production houses in Hyderabad. From creating unique telefilms and series to hosting highly engaging live shows on Star Maa such as Avakayyara, Suma is a testament to what dedication can achieve. Today she remains an inspiration to any individual who seeks to unlock their full potential in media production and content creation.</p>
                         
-                        <h4>Pioneering Successful Projects in the Telugu Television & Film Industry</h4>
-                        <p>Suma Filmy Arts has been a pioneering production house in the Telugu television and film industry. We strive to produce top-notch quality content that reflects our expertise while setting a new benchmark for creativity and excellence. With anunrivaledd knowledge base, we take pride in developing successful projects that are both enjoyable and inspiring. Our commitment to quality makes us one of the leading production houses in Hyderabad.</p>
-                        <h4>Quality Standards Ensured by Suma Filmy Arts and Their Commitment to Excellence</h4>
-                        <p>At Suma Filmy Arts, we understand the importance of producing top-notch work. Our entire team is dedicated to ensuring that each and every production meets our high standards of excellence. We use both digital and traditional methods combined with our decades of experience to bring your vision to life. As one of the most trusted names in the Telugu television and film industry, Suma Filmy Arts is committed to providing the best quality service possible. Whether you are creating a small scale TV commercial or a major feature film, we strive to make sure that our customers' expectations are met and exceeded.</p>
-                        <h4>Conclusion</h4>
-                        <p class="pb-1">Suma Filmy Arts is undeniably one of the leading production houses in the television industry today. With our experienced team, we make sure to bring out only the best entertainment for our viewers. We've brought out so many projects that have gained millions of fans including hits like BhaleChance le, F3, Wife Chethilo Life and Jujube TV. Our versatile and stress-busting content has united households across the nation and we will continue to strive towards producing more entertaining shows of such caliber. If you’re ever looking for some innovative yet entertaining content, be sure to check us out! We are Suma Filmy Arts, the best production house in Hyderabad</p>
                         <!-- <div class="bi-portfolio-details-list-img">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -307,7 +297,7 @@
         </div>
     </div>
 </section>
-
+{% endif %}
 <!--blogs section end-->
 
 

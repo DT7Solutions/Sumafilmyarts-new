@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Collaboration,Sponsorship,ContactData,Ideas,Application
+from .models import Collaboration,Sponsorship,ContactData,Ideas,Application,BlogPost,Category,Career
 
 import csv
 from django.http import HttpResponse
@@ -42,13 +42,35 @@ class AdminIdeasForm(admin.ModelAdmin):
 class AdminApplication(admin.ModelAdmin):
     list_display=('FirstName','LastName','Email' ,'Phone','Experience','file')
 
-
+#Blogpost
+class Adminblog(admin.ModelAdmin):
+    list_display = ('Id', 'Category','Title','Description','Image1','Body','CreatedName','Created_at','status')
+    list_filter = ["CreatedName",'Created_at']
     
+
+#Category
+class Admincategory(admin.ModelAdmin):
+    list_display = ('Name', 'Created')
+
+
+#career
+class AdminCareer(admin.ModelAdmin):
+    list_display = ('id','title', 'location', 'Sluglink', 'posted_date','full_time','description','Body','Image2','experience','gender','age','workingtime','dead_line')
+
+
+
+
+admin.site.register(Category,Admincategory)
+admin.site.register(BlogPost, Adminblog)
 admin.site.register(Collaboration,AdminCollaborationForm)
 admin.site.register(Sponsorship,AdminSponcershipForm)
 admin.site.register(ContactData,AdminContactData)
 admin.site.register(Ideas,AdminIdeasForm)
 admin.site.register(Application,AdminApplication)
+admin.site.register(Career,AdminCareer)
+
+
+
 
 
 

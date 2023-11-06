@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.contrib import messages
 from django.core.mail import send_mail,EmailMessage
 from django.conf import settings
-from .models import Collaboration,Sponsorship,ContactData,Ideas,Application
+from .models import Collaboration,Sponsorship,ContactData,Ideas,Application,BlogPost,Career
 
 # Create your views here.
 
@@ -19,18 +19,30 @@ def portfolio(request):
 def newsevents(request):
     return render(request, 'uifiles/newsandevents.html')
 
-def blogdetailspage1(request):
-    return render(request, 'uifiles/blogdetailspage1.html')
-
-def blogdetailspage2(request):
-    return render(request, 'uifiles/blogdetailspage2.html')
 
 def blog(request):
-    return render(request, 'uifiles/blogs.html')
+    blog = BlogPost.objects.all()
+    return render(request, 'uifiles/blogs.html',{'blog':blog})
+
+
+def blogdetailspage(request,slug):
+    blogdetails = BlogPost.objects.get(Sluglink=slug)
+    return render(request, 'uifiles/blogdetailspage1.html', {'blogdetails':blogdetails})
+
+
+
+# def blogdetailspage2(request,slug):
+#     blogdetails = BlogPost.objects.get(Sluglink=slug)
+#     return render(request, 'uifiles/blogdetailspage2.html', {'blogdetails':blogdetails})
 
 
 def career(request):
-    return render(request, 'uifiles/career.html')
+    blogitems = Career.objects.all()
+    return render(request, 'uifiles/career.html',{'blogitems':blogitems})
+
+def careerdetails(request,slug):
+    careerposts = Career.objects.get(Sluglink=slug)
+    return render(request, 'uifiles/careerdetails.html', {'careerposts':careerposts})
 
 #collaboration form
 def collaborate(request):
@@ -154,10 +166,6 @@ def youridea(request):
     return render(request, 'uifiles/youridea.html')
 
 
-def careerdetails(request):
-    return render(request, 'uifiles/careerdetails.html')
-
-
 #Apply_job form
 def apply_job(request):
     if request.method == "POST":
@@ -169,7 +177,7 @@ def apply_job(request):
         up_file = request.FILES['file']
         upload_file = settings.MEDIA_URL[1:] + "//pdf//" + str(up_file.name)
         
-        oApplication = Application(FirstName=firstname,LastName=lastname,Email=email,Phone=phone,Experience=exp, file=up_file )
+        oApplication = Application(FirstName=firstname,LastName=lastname,Email=email,Phone=phone,Experience=experinces, file=up_file )
         oApplication.save()
         subject="JobApplication"
         sucess =f'hi {firstname} Your Application has been submited Sucessfully'

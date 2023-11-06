@@ -71,31 +71,34 @@
 
 
 
+
+
 <!--career section2 start-->
 <section id="bi-career-feed" class="bi-career-feed-section">
     <div class="container">
-       
+       {% for blogitem in blogitems %}
         <div class="bi-career-feed-content">
             <div class="bi-career-feed-item d-flex align-items-center justify-content-between flex-wrap">
                 <div class=" inner-img-text d-flex align-items-center flex-wrap">
                     <div class="inner-img">
-                        <img src="{% static 'assets/img/about/cf1.png' %}" style="width:100%" alt="">
+                    <a href="/career/{{blogitem.Sluglink}}"></a> <img src="/media/{{blogitem.Image1}}" style="width:100%" height="100%" alt="">
                     </div>
                     <div class="inner-text headline pera-content ul-li">
-                        <h3><a href="#">Creative Writers (Skits, Short Films, & Content) - Telugu & English</a></h3>
+                        <h3><a href="/career/{{blogitem.Sluglink}}">{{blogitem.title}}</a></h3>
                         <ul>
-                            <li><i class="fal fa-map-marker-alt"></i> Bangalore </li>
-                            <li><i class="fal fa-calendar-alt"></i> June 2, 2023 </li>
-                            <li><i class="fal fa-clock"></i> Full Time</li>
+                            <li><i class="fal fa-map-marker-alt"></i> {{blogitem.location}} </li>
+                            <li><i class="fal fa-calendar-alt"></i> {{blogitem.posted_date}} </li>
+                            <li><i class="fal fa-clock"></i> {{blogitem.full_time}}</li>
                         </ul>
-                        <p><b>Description: </b>Suma Filmy Arts is a leading production company that serves as a home to some of India’s biggest entertaining TV shows through our versatile, and stress-busting content. We are looking for talented creative writers to join our team and help bring our stories to life</p>
+                        <p>{{blogitem.description}}</p>
+
                     </div>
                 </div>
                 <div class="bi-btn-1  bi-btn-area text-uppercase ">
-                    <a class="bi-btn-main  bi-btn-hover bi-btn-item" href="/careerdetails/">  <span></span> More Info</a>
+                    <a class="bi-btn-main  bi-btn-hover bi-btn-item" href="/careerdetails/{{blogitem.Sluglink}}">  <span></span> More Info</a>
                 </div>
             </div>
-            <div class="bi-career-feed-item d-flex align-items-center justify-content-between flex-wrap">
+            <!-- <div class="bi-career-feed-item d-flex align-items-center justify-content-between flex-wrap">
                 <div class="inner-img-text d-flex align-items-center flex-wrap">
                     <div class="inner-img">
                         <img src="{% static 'assets/img/about/cf2.png' %}" style="width:100%" alt="">
@@ -113,8 +116,9 @@
                 <div class="bi-btn-1 bi-btn-area text-uppercase">
                     <a class="bi-btn-main  bi-btn-hover bi-btn-item" href="/careerdetails/">  <span></span>More Info</a>
                 </div>
-            </div>
+            </div> -->
         </div>
+        {% endfor %}
     </div>
 </section>
 <!--career section2 end-->

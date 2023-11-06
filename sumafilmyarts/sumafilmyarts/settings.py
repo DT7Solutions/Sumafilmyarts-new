@@ -29,17 +29,10 @@ SECRET_KEY = 'django-insecure-x2@t@w%#jze*96g5umz2np=*t1c-731m&e624^wx%dd719ojzt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'kajasuresh522@gmail.com'
-EMAIL_HOST_PASSWORD = 'ohix ylqx nyqq bipp'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -52,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -145,5 +139,14 @@ else:
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
-
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'kajasuresh522@gmail.com'
+EMAIL_HOST_PASSWORD = 'ohix ylqx nyqq bipp'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
