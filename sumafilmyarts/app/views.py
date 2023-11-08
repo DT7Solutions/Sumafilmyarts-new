@@ -27,7 +27,7 @@ def blog(request):
 
 def blogdetailspage(request,slug):
     blogdetails = BlogPost.objects.get(Sluglink=slug)
-    return render(request, 'uifiles/blogdetailspage1.html', {'blogdetails':blogdetails})
+    return render(request, 'uifiles/blogdetailspage.html', {'blogdetails':blogdetails})
 
 
 

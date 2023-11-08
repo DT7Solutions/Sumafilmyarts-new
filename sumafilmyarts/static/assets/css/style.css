@@ -467,8 +467,20 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #181d2a url("../img/loader.svg") no-repeat center center;
+  background: #181d2a ; 
+    background: #181d2a url("../img/loader.svg") no-repeat center center;
+  color: red !important;
+  /* display: none !important; */
 }
+
+
+/* svg{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display:inline-block;
+} */
+
 
 .scrollup {
   width: 55px;
@@ -721,6 +733,7 @@ select:visited {
   line-height: 50px;
   font-family: 'Poppins', sans-serif;
   background-color: #f76407;
+  margin-left: 1px;
 }
 
 .bi-btn-1 a:before, .bi-btn-1 a:after {
@@ -12827,7 +12840,7 @@ CSS INDEX
   font-size: 35px !important;
   text-transform: uppercase !important;
   font-weight: 400 !important;
-  margin-top: 10% !important;
+  margin-top: 60% !important;
   color: #f76407 !important;
    
 }
@@ -16383,7 +16396,7 @@ CSS INDEX
 }
 .hpt-about-1-img .about-1-img-1 {
   width: 100%;
-  height: 560px;
+  height: 700px;
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
@@ -19938,8 +19951,8 @@ CSS INDEX
 
 .bi-portfolio-details-content h3, .bi-portfolio-details-content h4 {
   color: #0E0E0E;
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 23px;
+  font-weight: 400;
   padding-bottom: 25px;
 }
 .bi-portfolio-details-content h4 {
@@ -20041,6 +20054,9 @@ CSS INDEX
   margin: 0 auto;
   /* max-width: px; */
   margin-bottom: 40px;
+  box-shadow: 8px 8px 10px lightgray;
+  border-radius: 10px;
+  padding: 10px 10px;
 }
 .bi-blog-feed-item-2 .blog-img {
   overflow: hidden;
@@ -20078,6 +20094,8 @@ CSS INDEX
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 .bi-blog-feed-item-2 .blog-text p {
   font-size: 16px;
@@ -20085,6 +20103,8 @@ CSS INDEX
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 .bi-blog-feed-item-2:hover .blog-img img {
   -webkit-transform: scale(1.05);
@@ -20739,7 +20759,7 @@ CSS INDEX
 }
 
 .bi-career-feed-content {
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .bi-career-feed-item {
@@ -21740,14 +21760,16 @@ CSS INDEX
   .bi-blog-feed-item-2 {
     margin: 0 auto !important;
     /* max-width: 768px !important; */
-    padding-top: 50px !important;
-    padding-left: 0 !important;
+    padding-top: 30px !important;
+    /* padding-left: 0 !important; */
+    padding: 0px 20px;
+    border: 1px solid lightgray;
   }
   .bi-blog-feed-item-2 .blog-text h3{
     font-size: 30px;
   }
   .bi-section-title-3 p{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 60px !important;
   }
   .bi-section-title-1 .bi-subtitle{
@@ -21758,7 +21780,7 @@ CSS INDEX
     padding-bottom: 20px !important;
   }
   .bi-service-feed-item .service-text p {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 60px !important;
     padding-bottom: 55px;
   }
@@ -21766,28 +21788,29 @@ CSS INDEX
     font-size: 50px;
   }
   .bi-blog-section .bi-blog-text .bins-text{
-    font-size: 40px !important;
+    font-size:35px !important;
     line-height: 60px !important;
+    /* color: red !important; */
   }
 .right_align_content .bi-blog-tex h3{
   font-size: 50px;
 }
 .right_align_content .bi-blog-tex{
-  font-size: 40px;
+  font-size: 35px;
   line-height: 60px !important;
 }
 .hpt-subtitle-1{
   font-size: 50px !important;
   text-align: center !important;
- padding-left:340px !important;
+ padding-left:370px !important;
  padding-bottom: 55px;
 }
 .hpt-about-1-section-title p{
-  font-size: 40px;
+  font-size: 35px;
   line-height: 60px !important;
 }
 .pt-3 p{
-  font-size: 40px;
+  font-size: 35px;
   line-height: 60px !important;
   padding-top: 40px;
 } 
@@ -21805,16 +21828,27 @@ CSS INDEX
   padding-bottom: 30px;
 }
 .bi-blog-feed-section .pera-content p{
-  font-size: 40px;
+  font-size: 35px;
   line-height: 60px;
   padding-bottom: 30px;
 }
-.bi-btn-area a{
-  font-size: 38px;
-  padding: 30px 30px !important;
+.bi-btn-1 a {
+  font-size:38px !important;
+  display: inline-block;
+  height: 90px !important;
+  line-height: 90px !important;
+  background-color: #f76407;
+  color: #fff;
+  padding: 0px 40px;
+  border-radius: 6px;
+  transition: 25s ease-in-out;
+  border: none;
+  cursor: pointer;
 }
+
 .bi-blog-feed-section-2 .pera-content .headline-title{
   font-size: 50px !important;
+  padding-bottom: 50px !important;
 }
 .bi-blog-feed-item-2 .blog-text h3{
   font-size: 45px;
@@ -21822,7 +21856,7 @@ CSS INDEX
   padding-top: 30px;
 }
 .bi-blog-feed-item-2 .blog-text p{
-  font-size: 40px;
+  font-size: 35px;
   line-height: 60px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -21831,15 +21865,16 @@ CSS INDEX
   max-width: fit-content;
 }
 .hpt-footer-widget .footer-text p {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 60px;
+  text-align: justify;
 }
 .hpt-footer-widget .widget-title{
-  font-size: 30px;
+  font-size: 34px;
   line-height: 60px;
 }
 .hpt-footer-widget .menu-widget li a{
-  font-size: 30px !important;
+  font-size: 35px !important;
   line-height: 60px;
 }
 .hpt-footer-copyright{
@@ -21855,7 +21890,7 @@ CSS INDEX
   
 }
 .bi-blog-details-text-area p{
-  font-size: 40px;
+  font-size: 35px;
   line-height: 60px;
   padding-bottom: 40px;
 
@@ -21914,7 +21949,7 @@ CSS INDEX
 }
 
 .bi-career-item{
-  padding: 100px 0px 420px !important; 
+  padding: 100px 0px 160px !important; 
   margin-bottom: 60px !important;
 }
 .bi-career-item .inner-icon{
@@ -21948,6 +21983,7 @@ CSS INDEX
   line-height: 50px;
   padding-bottom: 30px;
   padding-top: 30px;
+  text-align: justify;
 }
 
 .bi-career-feed-item .inner-text li {
@@ -21955,7 +21991,7 @@ CSS INDEX
   padding-top: 20px;
 }
 .bi-career-feed-item .inner-text p{
-  font-size: 40px;
+  font-size: 35px;
   /* padding-bottom: 60px; */
   line-height: 50px;
   text-align: justify !important;
@@ -21965,7 +22001,7 @@ CSS INDEX
   padding-bottom: 20px;
 }
 .bi-portfolio-details-content p{
-  font-size: 30px;
+  font-size: 35px;
   line-height: 40px;
   padding-bottom: 50px;
 }
@@ -22085,6 +22121,127 @@ input[type=checkbox] {
   margin: 0 auto;
   max-width: 250px; */
 
+  .bi-blog-details-text-area .bi-career-details-text h3{
+    color: #0E0E0E;
+    font-size: 35px !important;
+    font-weight: 400;
+    padding-bottom: 20px;
+    line-height: 60px;
+}
+.bi-portfolio-details-content .bi-portfolio-sidebar h3{
+  color: #fff;
+  font-size: 35px !important;
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+
+.bi-career-details-text-area {
+  padding: 30px;
+  border-radius: 10px;
+  border: 3px solid rgba(22, 35, 43, 0.1);
+ 
+}
+.hpt-about-1-img .about-1-img-1{
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 20px !important;
+}
+
+.hpt-subtitle-1 {
+  background: var(--linear, linear-gradient(90deg, #E02626 0%, #F0831F 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  /* margin-bottom: 30px !important; */
+  line-height: 30px;
+  /* font-weight: 600; */
+  /* font-size: 14px; */
+  text-transform: uppercase;
+  /* padding: 13px 10px !important; */
+  color: #ff4242 !important;
+  /* font-size: 35px !important; */
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
+  margin-top: 5% !important;
+  color: #f76407 !important;
+}
+
+.bi-blog-item .bi-blog-img {
+  overflow: hidden;
+  border-radius: 10px;
+  padding-top: 30px !important;
+}
+
+.bi-portfolio-details-content h3{font-size: 35px;}
+
+.bi-service-feed-content{
+  padding-top: 10px !important;
+}
+
+.bi-blog-details-area-text h3{
+  color: #0E0E0E;
+  font-size: 35px !important;
+  font-weight: 400;
+  padding-bottom: 5px;
+  line-height: 60px !important;
+}
+
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+} 
+
+
+
+
+
+
+
+
+/* loader css  */
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader-spin {
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes animation {
+  0% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -105;
+  }
+  50% {
+    stroke-dasharray: 80 10;
+    stroke-dashoffset: -160;
+  }
+  100% {
+    stroke-dasharray: 1 98;
+    stroke-dashoffset: -300;
+  }
+}
+
+#spinner {
+  transform-origin: center;
+  animation-name: animation;
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier;
+  animation-iteration-count: infinite;
+}
+
+
+
 
 
 
@@ -22200,7 +22357,7 @@ input[type=checkbox] {
   .bi-header-section .hap-megamenu {
     position: relative !important;
   }
-}
+
 @media screen and (max-width: 767px) {
   .bi-portfolio-item-content {
     text-align: center;
@@ -22922,6 +23079,7 @@ input[type=checkbox] {
 
 .bi-blog-details-text-area{
   text-align: justify;
+  font-size: 16px;
 }
 
 .hpt-about-1-section-title p, .pt-3{
@@ -22975,6 +23133,13 @@ input[type=checkbox] {
   transition: 25s ease-in-out;
   border: none;
   cursor: pointer;
+}
+
+
+
+.bi-career-feed-content .justify-content-between{
+  justify-content:space-between !important;
+
 }
 
 

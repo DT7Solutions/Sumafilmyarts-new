@@ -93,11 +93,13 @@ $("#inputState").change(function(){
         
 
       success:function(data){
-        //   $('#enquiriesform')[0].reset();
-          $('.returnmessage').append("Your message has been received, We will contact you soon.")
+          $('#enquiriesform')[0].reset();
+          alert('success, submitted data')
+        //   $('.returnmessage').append("Your message has been received, We will contact you soon.")
       },
       error:function(data){
-          $('.returnmessage').append("Your message has been faild, please try agian.")
+        alert('fail, submitted data')
+        //   $('.returnmessage').append("Your message has been faild, please try agian.")
       }
   })
 })
@@ -134,8 +136,9 @@ $(document).ready(function(){
         
         success:function(data){
             $('#ideaform')[0].reset();
-            // $('.returnmessage').append("Your message has been received, We will contact you soon.")
             alert('success, submitted data')
+            // $('.returnmessage').append("Your message has been received, We will contact you soon.")
+            
             
         },
         error:function(data){
@@ -261,10 +264,14 @@ $(document).ready(function(){
            
            success:function(data){
                $('#collaborationform')[0].reset();
-               $('.returnmessage').append("Your message has been received, We will contact you soon.")
+               alert("Success, submitted data")
+            //    $('.returnmessage').append("Your message has been received, We will contact you soon.")
+            
            },
            error:function(data){
-               $('.returnmessage').append("Your message has been faild, please try agian.")
+            alert("fail, submitted data")
+            //    $('.returnmessage').append("Your message has been faild, please try agian.")
+           
            }
        })
    
