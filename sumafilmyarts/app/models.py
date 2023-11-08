@@ -1,6 +1,7 @@
 from django.db import models
 from datetime import datetime
 from .app import ContentTypeRestrictedFileField
+from ckeditor.fields import RichTextField
 # Create your models here.
 
 class Collaboration(models.Model):
@@ -138,7 +139,7 @@ class Career(models.Model):
     posted_date = models.DateField(auto_now_add=True)
     Sluglink = models.CharField(max_length=150, blank=True, null=True)
     full_time = models.CharField(max_length=50)
-    description = models.TextField()
+    description = RichTextField(blank=True,null=True)
     Body = models.TextField(blank=True,null=True) 
     job_title = models.CharField(max_length=50, blank=True, null=True)
     experience = models.CharField(max_length=50, null=True,blank=True)
