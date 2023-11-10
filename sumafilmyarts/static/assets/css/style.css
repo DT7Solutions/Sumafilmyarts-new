@@ -12840,7 +12840,7 @@ CSS INDEX
   font-size: 35px !important;
   text-transform: uppercase !important;
   font-weight: 400 !important;
-  margin-top: 60% !important;
+  /* margin-top: 60% !important; */
   color: #f76407 !important;
    
 }
@@ -21771,7 +21771,26 @@ CSS INDEX
   .bi-section-title-3 p{
     font-size: 35px;
     line-height: 60px !important;
+    padding: 0px 30px !important;
+    padding-bottom: 60px !important;
   }
+  .bi-about-img-3 .about-img{
+    overflow: hidden;
+    border-radius: 30px !important;
+    padding: 0px 30px !important;
+}
+
+.bi-service-feed-content{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.bi-blog-item .bi-blog-img{
+  overflow: hidden;
+  border-radius: 10px;
+  /* padding-top: 30px !important; */
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
   .bi-section-title-1 .bi-subtitle{
     font-size: 50px;
   }
@@ -21791,6 +21810,8 @@ CSS INDEX
     font-size:35px !important;
     line-height: 60px !important;
     /* color: red !important; */
+   padding: 0px 10px !important;
+   text-align: center !important;
   }
 .right_align_content .bi-blog-tex h3{
   font-size: 50px;
@@ -21798,6 +21819,7 @@ CSS INDEX
 .right_align_content .bi-blog-tex{
   font-size: 35px;
   line-height: 60px !important;
+  padding: 0px 20px;
 }
 .hpt-subtitle-1{
   font-size: 50px !important;
@@ -21808,6 +21830,7 @@ CSS INDEX
 .hpt-about-1-section-title p{
   font-size: 35px;
   line-height: 60px !important;
+  padding: 0px 30px !important;
 }
 .pt-3 p{
   font-size: 35px;
@@ -22148,6 +22171,7 @@ input[type=checkbox] {
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 20px !important;
+  padding: 0px 30px !important;
 }
 
 .hpt-subtitle-1 {
@@ -22193,6 +22217,13 @@ input[type=checkbox] {
   flex: 0 0 auto;
   width: 100%;
   padding-bottom: 70px;
+}
+.bi-blog-item .bi-blog-text-area{
+  padding-left: 30px !important;
+  padding-right: 15px !important;
+}
+.bi-team-content-2{
+  padding: 0px 30px !important;
 }
 
 } 

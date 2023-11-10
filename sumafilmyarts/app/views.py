@@ -76,8 +76,9 @@ def collaborate(request):
             mail.send()
         except:
             messages.error(request,'Your message has been failed, Please Try Agian')
-    return render (request,"uifiles/collaborations.html",{'navbar':'collaboration'})
-    return render(request, 'uifiles/collaborations.html')
+            
+    return render (request,"uifiles/Collaborations.html")
+    # return render(request, 'uifiles/collaborations.html')
 
 
 #sponsorship form
