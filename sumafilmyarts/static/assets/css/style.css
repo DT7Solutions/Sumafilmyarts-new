@@ -19319,7 +19319,7 @@ CSS INDEX
   position: absolute;
   border-radius: 100%;
   opacity: 0.0500000007;
-  background-color: var(--base-color);
+  /* background-color: #f76407 !important; */
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -23143,4 +23143,6 @@ input[type=checkbox] {
 }
 
 
-
+/* .bi-service-feed-content .bi-service-feed-item .service-icon svg{
+  background-color: #fff !important;
+} */

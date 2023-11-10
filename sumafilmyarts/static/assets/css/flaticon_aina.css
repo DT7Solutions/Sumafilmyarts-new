@@ -201,3 +201,49 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-chatting:before {
     content: "\f13d";
 }
+
+
+/* --------------------------------------------- */
+
+.flaticon-watch-tv:before {
+    content: "\f101";
+}
+.flaticon-post-production:before {
+    content: "\f102";
+}
+.flaticon-videography:before {
+    content: "\f103";
+}
+.flaticon-clapperboard:before {
+    content: "\f104";
+}
+.flaticon-production:before {
+    content: "\f105";
+}
+.flaticon-stage:before {
+    content: "\f106";
+}
+.flaticon-photography:before {
+    content: "\f107";
+}
+.flaticon-group:before {
+    content: "\f108";
+}
+.flaticon-time-left:before {
+    content: "\f109";
+}
+.flaticon-back-in-time:before {
+    content: "\f10a";
+}
+.flaticon-clock:before {
+    content: "\f10b";
+}
+.flaticon-clock-1:before {
+    content: "\f10c";
+}
+.flaticon-idea:before {
+    content: "\f10d";
+}
+.flaticon-lightbulb:before {
+    content: "\f10e";
+}
