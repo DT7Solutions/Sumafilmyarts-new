@@ -250,8 +250,6 @@ $(document).ready(function(){
      data.append("Sponcer_Type",Sponcer_Type);
      data.append("file",$("input[id^='file']")[0].files[0]);
      data.append('csrfmiddlewaretoken',csrfmiddlewaretoken)
-     
-   
    
      $.ajax({
            url:"/collaborate/",

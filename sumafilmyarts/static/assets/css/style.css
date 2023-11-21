@@ -20766,18 +20766,20 @@ CSS INDEX
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 15px 20px 15px 15px;
-  background-color: rgba(22, 35, 43, 0.05);
+  background-color:#f3f4f4; /*  rgba(22, 35, 43, 0.05); */
   /* box-shadow: 3px 2px 3px lightgray; */
   
- 
 }
+
 .bi-career-feed-item .inner-img {
   width: 152px;
   height: 152px;
   overflow: hidden;
   margin-right: 30px;
   border-radius: 10px;
+  margin-top: 15px;
 }
+
 .bi-career-feed-item .inner-text {
   max-width: 770px;
 }
@@ -20787,6 +20789,7 @@ CSS INDEX
   font-weight: 400;
   line-height: 30px;
   padding-bottom: 10px;
+  margin-top: 15px;
 }
 .bi-career-feed-item .inner-text p {
   padding-top: 10px;
