@@ -144,14 +144,13 @@ $(window).scroll(function() {
 		$(this).find('.icon').toggleClass('iconrotete')
 	})
 	if($('.h1-sidebar-menu li.dropdown ul').length){
-		$('.h1-sidebar-menu li.dropdown').append('<div class="dropdown-btn"><span class="fas fa-caret-down"></span></div>');
+		$('.h1-sidebar-menu li.dropdown').append('<div class="dropdown-btn"><span class="fas fa-caret-right"></span></div>');
 		$('.h1-sidebar-menu li.dropdown .dropdown-btn').on('click', function() {
 			$(this).prev('ul').slideToggle(500);
+			$(this).find('span').toggleClass("fa-caret-right fa-caret-down");
 		});
 	}
-	$(".dropdown-btn").on("click", function () {
-		$(this).toggleClass("toggle-open");
-	});
+	
 // --------------------------------- dropdown-menu-end ----------------------------------
 
 // -------------------------------- testimonial-2-start -----------------------------
