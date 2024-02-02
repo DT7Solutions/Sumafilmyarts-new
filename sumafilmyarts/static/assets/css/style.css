@@ -738,17 +738,17 @@ select:visited {
   margin-left: 1px;
 }
 
-.bi-btn-1 a:before, .bi-btn-1 a:after {
+/* .bi-btn-1 a:before, .bi-btn-1 a:after {
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
-  /* background-color: #000000; */
+  background-color: #000000;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transition: all 700ms ease;
   transition: all 700ms ease;
-}
+} */
 .bi-btn-1 a:before {
   top: -15px;
   left: -135px;
@@ -826,7 +826,7 @@ select:visited {
 }
 
 .inner-page-padding {
-  padding: 60px 0px;
+  padding: 60px 0 30px;
 }
 
 .bi-pagination li a {
@@ -16426,7 +16426,7 @@ CSS INDEX
   .hpt-about-1-wrap {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
-    gap: 150px 0px;
+    gap: 70px 0px;
   }
 }
 .hpt-about-1-img {
@@ -19824,6 +19824,7 @@ CSS INDEX
   margin-top: 30px;
   border-radius: 20px;
   border: 1px solid rgba(22, 35, 43, 0.1);
+
 }
 .bi-team-details-contact-form input, .bi-team-details-contact-form textarea {
   width: 100%;
@@ -21540,6 +21541,30 @@ CSS INDEX
   }
 }
 @media screen and (max-width: 991px) {
+  .bi-career-feed-item{
+    border-radius: 10px;
+    margin-bottom: 65px !important;
+    padding: 15px 20px 15px 15px;
+    background-color: #f3f4f4;
+  }
+
+  .bi-career-feed-section {
+    /* padding: 100px 0px; */
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.bi-portfolio-sidebar {
+  border-radius: 10px;
+  padding: 30px 30px 25px;
+  background-color: #16232B;
+  margin-bottom: 30px;
+}
+
+#bi-team-2{
+  margin-bottom: 40px !important;
+}
+
   .bi-career-feed-item .inner-text {
     max-width:fit-content !important;
 }
@@ -21816,8 +21841,15 @@ CSS INDEX
     font-size: 35px;
     line-height: 60px !important;
     padding: 0px 30px !important;
-    padding-bottom: 60px !important;
+    padding-bottom: 40px !important;
   }
+
+  .bi-section-title-3 p {
+    text-align: justify !important;
+    margin-top: 100px !important;
+    /* text-align: center; */
+}
+
   .bi-about-img-3 .about-img{
     overflow: hidden;
     border-radius: 30px !important;
@@ -22016,7 +22048,7 @@ CSS INDEX
 }
 
 .bi-career-item{
-  padding: 100px 0px 160px !important; 
+  padding: 100px 0px 167px !important; 
   margin-bottom: 60px !important;
 }
 .bi-career-item .inner-icon{
@@ -22144,7 +22176,7 @@ input[type=checkbox] {
   font-size: 50px !important;
   line-height: 30px !important;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px !important;
 }
 .bi-team-details-contact-form .form-select{
   font-size: 25px !important; 
@@ -22154,6 +22186,7 @@ input[type=checkbox] {
     margin-top: 30px;
     border-radius: 20px;
     border: 3px solid rgba(22, 35, 43, 0.1);
+    margin-bottom: 50px;
 }
 .bi-team-details-contact-form h6{
   font-size: 23px;
@@ -22164,7 +22197,7 @@ input[type=checkbox] {
 .bi-blog-feed-item-3 {
   padding: 30px;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border: 3px solid rgba(22, 35, 43, 0.1);
 }
 .bi-career-details-text-area .bi-career-details-img img{
@@ -22260,7 +22293,7 @@ input[type=checkbox] {
 .col-md-6 {
   flex: 0 0 auto;
   width: 100%;
-  padding-bottom: 70px;
+  /* padding-bottom: 70px; */
 }
 .bi-blog-item .bi-blog-text-area{
   padding-left: 30px !important;
@@ -22269,6 +22302,11 @@ input[type=checkbox] {
 .bi-team-content-2{
   padding: 0px 30px !important;
 }
+
+.bi-blog-item-sec {
+    padding-bottom: 70px;
+}
+
 
 } 
 
@@ -22947,7 +22985,8 @@ input[type=checkbox] {
     padding: 50px 30px;
   }
   .inner-page-padding {
-    padding: 50px 0px;
+    padding:60px 0;
+    
   }
   .bi-pagination li a {
     width: 45px;
@@ -23089,6 +23128,12 @@ input[type=checkbox] {
 .bi-about-video-play {
     /* margin: 0 auto; */
     max-width: 635px;
+}
+.bi-blog-details-content {
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(22, 35, 43, 0.1);
+  margin-bottom: 40px !important;
 }
 
 }
