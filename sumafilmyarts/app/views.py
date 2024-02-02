@@ -3,29 +3,37 @@ from django.contrib import messages
 from django.core.mail import send_mail,EmailMessage
 from django.conf import settings
 from .models import Collaboration,Sponsorship,ContactData,Ideas,Application,BlogPost,Career
+from django.core.cache import cache
+# from django.views.decorators.cache import cache_page
 
 # Create your views here.
 
-
+# @cache_page(60 * 5)  # Cache for 5 minutes
 def home(request):
+    cache.clear()
     return render(request, 'uifiles/home.html')
 
 def about(request):
+    cache.clear()
     return render(request, 'uifiles/about-us.html')
 
 def portfolio(request):
+    cache.clear()
     return render(request, 'uifiles/portfolio.html')
 
 def newsevents(request):
+    cache.clear()
     return render(request, 'uifiles/newsandevents.html')
 
 
 def blog(request):
+    cache.clear()
     blog = BlogPost.objects.all()
     return render(request, 'uifiles/blogs.html',{'blog':blog})
 
 
 def blogdetailspage(request,slug):
+    cache.clear()
     blogdetails = BlogPost.objects.get(Sluglink=slug)
     return render(request, 'uifiles/blogdetailspage.html', {'blogdetails':blogdetails})
 
@@ -37,15 +45,18 @@ def blogdetailspage(request,slug):
 
 
 def career(request):
+    cache.clear()
     blogitems = Career.objects.all()
     return render(request, 'uifiles/career.html',{'blogitems':blogitems})
 
 def careerdetails(request,slug):
+    cache.clear()
     careerposts = Career.objects.get(Sluglink=slug)
     return render(request, 'uifiles/careerdetails.html', {'careerposts':careerposts})
 
 #collaboration form
 def collaborate(request):
+    cache.clear()
     if request.method == "POST":
         firstname = request.POST.get('firstname',"")
         lastname = request.POST.get('lastname',"")
@@ -83,6 +94,7 @@ def collaborate(request):
 
 #sponsorship form
 def sponsorship(request):
+    cache.clear()
     if request.method == "POST":
         firstname = request.POST.get('firstname',"")
         lastname = request.POST.get('lastname',"")
@@ -114,6 +126,7 @@ def sponsorship(request):
 
 #Enquiries Form
 def enquiries(request):
+    cache.clear()
     if request.method == "POST":
         firstname = request.POST.get('firstname',"")
         lastname =  request.POST.get('lastname',"")
@@ -142,6 +155,7 @@ def enquiries(request):
 
 # your idea form
 def youridea(request):
+    cache.clear()
     if request.method == "POST":
         name = request.POST.get('fname',"")
         email = request.POST.get('email',"")
@@ -169,6 +183,7 @@ def youridea(request):
 
 #Apply_job form
 def apply_job(request):
+    cache.clear()
     if request.method == "POST":
         firstname = request.POST.get('firstname',"")
         lastname = request.POST.get('lastname',"")
