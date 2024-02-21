@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+from .jazzmin import JAZZMIN_SETTINGS
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,6 +39,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -135,6 +137,8 @@ if DEBUG:
     STATICFILES_DIRS = [STATIC_DIR,]
 else:
     STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+JAZZMIN_SETTINGS = JAZZMIN_SETTINGS
 
 
 # Default primary key field type

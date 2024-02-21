@@ -19256,7 +19256,8 @@ CSS INDEX
   font-family: 'Poppins', sans-serif;
 }
 .bi-breadcrumbs-content ul li a {
-  color: black;
+  /* color: black; */
+  color: #fff;
 }
 .bi-breadcrumbs-content ul li:last-child {
   margin-right: 0;
@@ -23055,7 +23056,7 @@ input[type=checkbox] {
 /*---------------------------------------------------- */
 
 .bi-breadcrumb-bg-img{
-  height: 45vh ;
+  height: 50vh;
   background-position:bottom center;
   background-size: cover;
 }
